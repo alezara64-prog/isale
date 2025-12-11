@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Docker
+docker-compose.override.yml
+
+# Build
+dist/
+build/
+*.exe
+
+# Database
+*.db
+*.sqlite
+
+# Problematic files
+nul
+backend/nul
+frontend/nul
+
+# Uploads
+uploads/
+uploadslogos/
+
+# Supabase local
+backend/supabase/.branches
+backend/supabase/.temp

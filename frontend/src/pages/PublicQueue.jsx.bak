@@ -1,0 +1,230 @@
+import { useState, useEffect } from 'react';
+import api from '../config/api';
+import ChatBox from '../components/ChatBox';
+import './PublicQueue.css';
+
+function PublicQueue() {
+  const [queue, setQueue] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [singerName, setSingerName] = useState('');
+  const [songTitle, setSongTitle] = useState('');
+  const [artist, setArtist] = useState('');
+  const [tonality, setTonality] = useState(0);
+  const [submitting, setSubmitting] = useState(false);
+  const [successMessage, setSuccessMessage] = useState('');
+
+  // Carica la coda all'avvio
+  useEffect(() => {
+    fetchQueue();
+    // Aggiorna ogni 5 secondi
+    const interval = setInterval(fetchQueue, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const fetchQueue = async () => {
+    try {
+      const response = await api.get('/api/queue');
+      setQueue(response.data.data);
+      setError(null);
+    } catch (err) {
+      setError('Errore nel caricamento della coda');
+      console.error(err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Validazione - TUTTI i campi obbligatori
+    if (!singerName.trim() || !songTitle.trim() || !artist.trim()) {
+      setError('Tutti i campi sono obbligatori');
+      return;
+    }
+
+    setSubmitting(true);
+    setError(null);
+
+    try {
+      const response = await api.post('/api/queue', {
+        singerName: singerName.trim(),
+        songTitle: songTitle.trim(),
+        artist: artist.trim(),
+        tonality: parseInt(tonality)
+      });
+
+      setSuccessMessage(`${singerName}, sei in posizione ${response.data.data.position}!`);
+      setSingerName('');
+      setSongTitle('');
+      setArtist('');
+      setTonality(0);
+
+      // Ricarica la coda
+      await fetchQueue();
+
+      // Nascondi il messaggio dopo 5 secondi
+      setTimeout(() => setSuccessMessage(''), 5000);
+    } catch (err) {
+      setError(err.response?.data?.error || 'Errore durante l\'aggiunta alla coda');
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
+  const getCurrentSinger = () => {
+    return queue.find(item => item.status === 'singing');
+  };
+
+  const getWaitingQueue = () => {
+    return queue.filter(item => item.status === 'waiting');
+  };
+
+  const currentSinger = getCurrentSinger();
+  const waitingQueue = getWaitingQueue();
+
+  return (
+    <div className="public-queue-container">
+      <header className="header">
+        <h1>🎤 Karaoke Manager</h1>
+        <p>Aggiungi la tua canzone alla coda!</p>
+        <a href="/admin/login" className="admin-link">🔒 Area Admin</a>
+      </header>
+
+      {/* Form per aggiungersi alla coda */}
+      <section className="add-section">
+        <form onSubmit={handleSubmit} className="add-form">
+          <div className="form-group">
+            <label htmlFor="singerName">Il tuo nome:</label>
+            <input
+              type="text"
+              id="singerName"
+              value={singerName}
+              onChange={(e) => setSingerName(e.target.value)}
+              placeholder="Es: Mario Rossi"
+              maxLength="50"
+              disabled={submitting}
+            />
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="songTitle">Titolo canzone:</label>
+            <input
+              type="text"
+              id="songTitle"
+              value={songTitle}
+              onChange={(e) => setSongTitle(e.target.value)}
+              placeholder="Es: Volare"
+              maxLength="100"
+              disabled={submitting}
+              required
+            />
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="artist">Cantante originale:</label>
+            <input
+              type="text"
+              id="artist"
+              value={artist}
+              onChange={(e) => setArtist(e.target.value)}
+              placeholder="Es: Domenico Modugno"
+              maxLength="50"
+              disabled={submitting}
+              required
+            />
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="tonality">
+              Tonalità: <strong>{tonality > 0 ? `+${tonality}` : tonality}</strong>
+            </label>
+            <select
+              id="tonality"
+              value={tonality}
+              onChange={(e) => setTonality(parseInt(e.target.value))}
+              disabled={submitting}
+              required
+            >
+              <option value="-6">-6 (molto più basso)</option>
+              <option value="-5">-5</option>
+              <option value="-4">-4</option>
+              <option value="-3">-3</option>
+              <option value="-2">-2</option>
+              <option value="-1">-1</option>
+              <option value="0">0 (originale)</option>
+              <option value="1">+1</option>
+              <option value="2">+2</option>
+              <option value="3">+3</option>
+              <option value="4">+4</option>
+              <option value="5">+5</option>
+              <option value="6">+6 (molto più alto)</option>
+            </select>
+            <small className="helper-text">0 = tonalità originale, - più basso, + più alto</small>
+          </div>
+
+          <button type="submit" disabled={submitting} className="btn-submit">
+            {submitting ? 'Aggiunta in corso...' : 'Aggiungi alla Coda'}
+          </button>
+        </form>
+
+        {successMessage && (
+          <div className="success-message">{successMessage}</div>
+        )}
+
+        {error && (
+          <div className="error-message">{error}</div>
+        )}
+      </section>
+
+      {/* Cantante attuale */}
+      {currentSinger && (
+        <section className="current-singer">
+          <h2>🎵 Sta cantando ora:</h2>
+          <div className="singer-card current">
+            <span className="singer-name">{currentSinger.singerName}</span>
+            <span className="song-title">{currentSinger.songTitle} - {currentSinger.artist}</span>
+            {currentSinger.tonality !== 0 && (
+              <span className="tonality-info">
+                Tonalità: {currentSinger.tonality > 0 ? `+${currentSinger.tonality}` : currentSinger.tonality}
+              </span>
+            )}
+          </div>
+        </section>
+      )}
+
+      {/* Coda */}
+      <section className="queue-section">
+        <h2>📋 Prossimi in Coda ({waitingQueue.length})</h2>
+
+        {loading && <p>Caricamento...</p>}
+
+        {!loading && waitingQueue.length === 0 && (
+          <p className="empty-message">La coda è vuota! Sii il primo ad aggiungerti!</p>
+        )}
+
+        {!loading && waitingQueue.length > 0 && (
+          <div className="queue-list">
+            {waitingQueue.map((item, index) => (
+              <div key={item.id} className="queue-item">
+                <div className="position">{index + 1}</div>
+                <div className="info">
+                  <div className="singer-name">{item.singerName}</div>
+                  <div className="song-title">{item.songTitle} - {item.artist}</div>
+                  {item.tonality !== 0 && (
+                    <div className="tonality-badge">
+                      Tonalità: {item.tonality > 0 ? `+${item.tonality}` : item.tonality}
+                    </div>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+      </section>
+    </div>
+  );
+}
+
+export default PublicQueue;

@@ -1,0 +1,52 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: karaoke-backend
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+    restart: unless-stopped
+    networks:
+      - karaoke-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3001/health"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+
+  frontend:
+    build: ./frontend
+    container_name: karaoke-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+    networks:
+      - karaoke-network
+
+  # Database (esempio PostgreSQL - decommentare se necessario)
+  # db:
+  #   image: postgres:15-alpine
+  #   container_name: karaoke-db
+  #   environment:
+  #     POSTGRES_DB: karaoke_manager
+  #     POSTGRES_USER: karaoke_user
+  #     POSTGRES_PASSWORD: karaoke_password
+  #   volumes:
+  #     - postgres_data:/var/lib/postgresql/data
+  #   ports:
+  #     - "5432:5432"
+  #   networks:
+  #     - karaoke-network
+
+networks:
+  karaoke-network:
+    driver: bridge
+
+# volumes:
+#   postgres_data:

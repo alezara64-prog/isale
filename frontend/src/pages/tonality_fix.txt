@@ -1,0 +1,24 @@
+.admin-card .card-info .song-line .tonality-value,
+.card-info .song-line .tonality-value {
+  font-size: 1.2rem !important;
+  line-height: 1 !important;
+  vertical-align: baseline !important;
+  display: inline !important;
+  margin: 0 !important;
+  padding: 0 4px !important;
+  background: rgba(255, 215, 0, 0.1);
+  border-radius: 4px;
+}
+
+.admin-card .card-info .song-line .tonality-value.blink,
+.card-info .song-line .tonality-value.blink {
+  color: #ff0000 !important;
+  font-size: 1.4rem !important;
+  font-weight: 700 !important;
+  animation: blinkAnimation 1s infinite;
+  line-height: 1 !important;
+  vertical-align: baseline !important;
+  display: inline !important;
+  margin: 0 !important;
+  padding: 0 4px !important;
+}

@@ -1,0 +1,2291 @@
+{
+  "timestamp": "2025-11-13T23:16:25.566Z",
+  "totalSingers": 2551,
+  "issues": {
+    "splitSongs": [
+      {
+        "singer": "2 EIVISSA",
+        "title": "OH LA LA LA"
+      },
+      {
+        "singer": "2UE",
+        "title": "LA TUA IMMAGINE (SOUND OF"
+      },
+      {
+        "singer": "2UE",
+        "title": "SILENCE)"
+      },
+      {
+        "singer": "CRISTINA D'AVENA",
+        "title": "LOVE OVER GOLD (RADIO EDIT) MONEY FOR NOTHING"
+      },
+      {
+        "singer": "ELLIE GOULDING",
+        "title": "LOVE ME LIKE YOU DO MIRACLE"
+      },
+      {
+        "singer": "GOSSIP",
+        "title": "LOVE LONG DISTANCE"
+      },
+      {
+        "singer": "JULIO IGLESIAS",
+        "title": "UNA DONNA PUÃ’ CAMBIAR LA"
+      },
+      {
+        "singer": "JUSTIN BIEBER",
+        "title": "LOVE YOURSELF MONSTER PEACHES SORRY"
+      },
+      {
+        "singer": "JUSTIN BIEBER",
+        "title": "LOVE NEVER FELT SO GOOD SAY SOMETHING"
+      },
+      {
+        "singer": "MECANO",
+        "title": "FIGLIO DELLA LUNA (HIJO DE LA"
+      },
+      {
+        "singer": "MELANIE THORNTON",
+        "title": "LOVE HOW YOU LOVE ME"
+      },
+      {
+        "singer": "PAOLA & CHIARA",
+        "title": "TUTTA N'ATA STORIA VENTO DI"
+      },
+      {
+        "singer": "ANNIE LENNOX",
+        "title": "LOVE SONG FOR A VAMPIRE NO MORE I LOVE YOU'S THERE MUST BE AN ANGEL (PLAYING WITH MY HEART)"
+      },
+      {
+        "singer": "BRUNO MARS",
+        "title": "JUST THE WAY YOU ARE LEAVE THE"
+      },
+      {
+        "singer": "ELVIS PRESLEY",
+        "title": "LOVE ME TENDER (LIVE VERSION)"
+      },
+      {
+        "singer": "MODERN TALKING",
+        "title": "LOVE)"
+      },
+      {
+        "singer": "NINO D'ANGELO",
+        "title": "POPCORN E PATATINE SENZA GIACCA E"
+      },
+      {
+        "singer": "SHIVA",
+        "title": "LOVE TONIGHT GUASTO D'AMORE"
+      },
+      {
+        "singer": "TAYLOR DAYNE",
+        "title": "LOVE WILL LEAD YOU BACK"
+      },
+      {
+        "singer": "TAYLOR DAYNE",
+        "title": "YOU'RE LOSING ME (FROM THE"
+      },
+      {
+        "singer": "ZUCCHERO",
+        "title": "LOVE IS ALL AROUND"
+      },
+      {
+        "singer": "ALEXIA",
+        "title": "UH LA LA LA"
+      },
+      {
+        "singer": "ALISON MOYET",
+        "title": "LOVE RESURRECTION"
+      },
+      {
+        "singer": "APOLLINARE ROSSI",
+        "title": "LOVELY DAY"
+      },
+      {
+        "singer": "CKAY",
+        "title": "LOVE NWANTITI (NORTH AFRICAN"
+      },
+      {
+        "singer": "CLAUDIA MORI",
+        "title": "LA COPPIA PIÙ BELLA DEL"
+      },
+      {
+        "singer": "DAVID CIVERA",
+        "title": "LOVERS ON THE SUN MEMORIES"
+      },
+      {
+        "singer": "DOROTEA MELE",
+        "title": "LOVELY ON MY HAND"
+      },
+      {
+        "singer": "DULCE PONTES",
+        "title": "YOUR LOVE (C'ERA UNA VOLTA IL"
+      },
+      {
+        "singer": "ENGELBERT HUMPERDINCK",
+        "title": "LOVE ME WITH ALL YOUR HEART (CUANDO CALIENTA EL SOL)"
+      },
+      {
+        "singer": "ENNIO MORRICONE",
+        "title": "YOUR LOVE (C'ERA UNA VOLTA IL"
+      },
+      {
+        "singer": "FRANK SINATRA",
+        "title": "LOVES SOMEBODY FLY ME TO THE MOON"
+      },
+      {
+        "singer": "FRANK SINATRA",
+        "title": "LOVE'S BEEN GOOD TO ME MOON RIVER"
+      },
+      {
+        "singer": "JASON DERULO",
+        "title": "LOVE NOT WAR (THE TAMPA BEAT)"
+      },
+      {
+        "singer": "KEYSHIA COLE",
+        "title": "LOVE"
+      },
+      {
+        "singer": "KHALID",
+        "title": "LOVELY"
+      },
+      {
+        "singer": "KID ROCK",
+        "title": "LOVE AND PRIDE"
+      },
+      {
+        "singer": "MARIO BIONDI",
+        "title": "LOVE IS A TEMPLE MY GIRL"
+      },
+      {
+        "singer": "MARK RONSON",
+        "title": "KISSING A FOOL L O V E"
+      },
+      {
+        "singer": "MARK RONSON",
+        "title": "LOVE YOU ANYMORE ME AND MRS. JONES"
+      },
+      {
+        "singer": "MARK RONSON",
+        "title": "THE BEST IS YET TO COME THE"
+      },
+      {
+        "singer": "MARK RONSON",
+        "title": "LOVE LIKE MINE"
+      },
+      {
+        "singer": "MICHAEL JACKSON",
+        "title": "LOVE NEVER FELT SO GOOD MAN IN THE MIRROR REMEMBER THE TIME"
+      },
+      {
+        "singer": "MUSE",
+        "title": "TIME IS RUNNING OUT UNINTENDED"
+      },
+      {
+        "singer": "NATALIE COLE",
+        "title": "LOVE"
+      },
+      {
+        "singer": "PAT BOONE",
+        "title": "LOVE LETTERS IN THE SAND"
+      },
+      {
+        "singer": "PATTY PRAVO",
+        "title": "E DIMMI CHE NON VUOI MORIRE E"
+      },
+      {
+        "singer": "THE ADVENTURES",
+        "title": "IMPARARE DAL VENTO L'ALBA DI"
+      },
+      {
+        "singer": "THE ADVENTURES",
+        "title": "L'ULTIMO TRENO DELLA NOTTE LA"
+      },
+      {
+        "singer": "BILLIE EILISH",
+        "title": "LOVELY LUNCH"
+      },
+      {
+        "singer": "CARLOS MERLET",
+        "title": "LOVE OF MY LIFE MARIA MARIA"
+      },
+      {
+        "singer": "CARLOS MERLET",
+        "title": "W L'INGHILTERRA (LIVE ARENA DI"
+      },
+      {
+        "singer": "ED SHEERAN",
+        "title": "SOUTH OF THE BORDER THE JOKER AND"
+      },
+      {
+        "singer": "FILIPPA GIORDANO",
+        "title": "LOVE)"
+      },
+      {
+        "singer": "KIRSTEN BELL",
+        "title": "LOVE IS AN OPEN DOOR (FROZEN)"
+      },
+      {
+        "singer": "KRIS KRISTOFFERSON",
+        "title": "HELP ME MAKE IT THROUGH THE"
+      },
+      {
+        "singer": "MICHELE BRAVI",
+        "title": "LA VITA BREVE DEI CORIANDOLI LA"
+      },
+      {
+        "singer": "NAUGHTY BOY",
+        "title": "LA LA LA"
+      },
+      {
+        "singer": "NAZARETH",
+        "title": "LOVE HURTS"
+      },
+      {
+        "singer": "NEGRAMARO",
+        "title": "NUVOLE E LENZUOLA OGNI MIO ISTANTE ORA TI CANTO IL"
+      },
+      {
+        "singer": "NUKA",
+        "title": "LOVE NOT WAR (THE TAMPA BEAT)"
+      },
+      {
+        "singer": "OMAR MONTES",
+        "title": "LOVE OF THE COMMON PEOPLE"
+      },
+      {
+        "singer": "QUEEN",
+        "title": "LOVE OF MY LIFE RADIO GA-GA SOMEBODY TO LOVE"
+      },
+      {
+        "singer": "THE BEATLES",
+        "title": "STRAWBERRY FIELDS FOREVER THE BALLAD OF JOHN AND"
+      },
+      {
+        "singer": "ADRIANO PAPPALARDO",
+        "title": "LOVE IS A LOSING GAME ME & MR. JONES (LIVE)"
+      },
+      {
+        "singer": "ANASTACIA",
+        "title": "TIME"
+      },
+      {
+        "singer": "ATOMIC KITTEN",
+        "title": "THE TIDE IS HIGH (GET THE"
+      },
+      {
+        "singer": "BLANCO",
+        "title": "LA CANZONE NOSTRA LACRIME DI"
+      },
+      {
+        "singer": "CAT STEVENS",
+        "title": "IL VOLTO DELLA VITA (DAYS OF"
+      },
+      {
+        "singer": "EDUARDO DE CRESCENZO",
+        "title": "IO CE CREDO L'INFINITÀ L'ODORE DEL"
+      },
+      {
+        "singer": "ERIC CLAPTON",
+        "title": "NOBODY KNOWS YOU WHEN YOU'RE DOWN AND"
+      },
+      {
+        "singer": "ERICA MOU",
+        "title": "NELLA VASCA DA BAGNO DEL"
+      },
+      {
+        "singer": "GEMBOY",
+        "title": "FATALITÀ (PARODIA DI"
+      },
+      {
+        "singer": "INDILA",
+        "title": "LOVE STORY"
+      },
+      {
+        "singer": "JOHN NEWMAN",
+        "title": "LOVE ME AGAIN"
+      },
+      {
+        "singer": "JOHN PAUL YOUNG",
+        "title": "LOVE IS IN THE AIR"
+      },
+      {
+        "singer": "LIZZO",
+        "title": "LOVE IN REAL LIFE TRUTH HURTS"
+      },
+      {
+        "singer": "MATTEO BRANCALEONI",
+        "title": "LOVE IN PORTOFINO (LATIN - TESTO ITALIANO)"
+      },
+      {
+        "singer": "MATTEO BRANCALEONI",
+        "title": "LOVE IN PORTOFINO (LATIN)"
+      },
+      {
+        "singer": "NEIL DIAMOND",
+        "title": "LOVE ON THE ROCKS SEPTEMBER MORN' SONG SUNG BLUE"
+      },
+      {
+        "singer": "ONE DIRECTION",
+        "title": "LOVE YOU GOODBYE NIGHT CHANGES ONE THING"
+      },
+      {
+        "singer": "PIERANGELO BERTOLI",
+        "title": "A MUSO DURO CENT'ANNI DI"
+      },
+      {
+        "singer": "RIHANNA",
+        "title": "LOVE ON THE BRAIN"
+      },
+      {
+        "singer": "SARA BAREILLES",
+        "title": "LOVE SONG"
+      },
+      {
+        "singer": "SARAH",
+        "title": "TIME AFTER TIME (SWING VERSION)"
+      },
+      {
+        "singer": "THE DOORS",
+        "title": "LOVE ME TWO TIMES PEOPLE ARE"
+      },
+      {
+        "singer": "PINK FLOYD",
+        "title": "TIME (SINGLE EDIT) US AND THEM"
+      },
+      {
+        "singer": "AL STEWART",
+        "title": "TIME PASSAGES"
+      },
+      {
+        "singer": "ALBANO",
+        "title": "LOVE IN PORTOFINO MATTINATA (MATTINO) MELODRAMMA"
+      },
+      {
+        "singer": "ANDY WILLIAMS",
+        "title": "LOVE STORY MOON RIVER YESTERDAY"
+      },
+      {
+        "singer": "BOB SINCLAR",
+        "title": "WORLD HOLD ON (CHILDREN OF THE SKY)"
+      },
+      {
+        "singer": "CELESTE",
+        "title": "LOVE IS BACK"
+      },
+      {
+        "singer": "COUSTEAU",
+        "title": "THE LAST GOOD DAY OF THE"
+      },
+      {
+        "singer": "ELGRANDE TOTO",
+        "title": "LOVE NWANTITI (NORTH AFRICAN"
+      },
+      {
+        "singer": "ELISA",
+        "title": "LOVE IS REQUITED LOVE ME FOREVER"
+      },
+      {
+        "singer": "FRANCESCO DE GREGORI",
+        "title": "I MUSCOLI DEL CAPITANO IL BANDITO E IL"
+      },
+      {
+        "singer": "GIAMPIERO ARTEGIANI",
+        "title": "E LE RONDINI SFIORAVANO IL"
+      },
+      {
+        "singer": "GIANLUCA GRIGNANI",
+        "title": "FALCO A METÀ FUORI DAI GUAI IL"
+      },
+      {
+        "singer": "LARA FABIAN",
+        "title": "LOVE BY GRACE"
+      },
+      {
+        "singer": "MAURIZIO VANDELLI",
+        "title": "CHE COLPA ABBIAMO NOI COME PASSA IL"
+      },
+      {
+        "singer": "MAX PEZZALI",
+        "title": "LA METÀ DI NIENTE LA STORIA DEL"
+      },
+      {
+        "singer": "RAG'N'BONE MAN",
+        "title": "LOVERS IN A PAST LIFE"
+      },
+      {
+        "singer": "RAVYN LENAE",
+        "title": "LOVE ME NOT"
+      },
+      {
+        "singer": "STEVE EDWARDS",
+        "title": "WORLD HOLD ON (CHILDREN OF"
+      },
+      {
+        "singer": "STEVE EDWARDS",
+        "title": "WORLD HOLD ON (CHILDREN OF"
+      },
+      {
+        "singer": "STING",
+        "title": "LOVE IS THE SEVENTH WAVE"
+      },
+      {
+        "singer": "U2",
+        "title": "STUCK IN A MOMENT YOU CAN'T GET OUT OF"
+      },
+      {
+        "singer": "WET WET WET",
+        "title": "LOVE IS ALL AROUND"
+      },
+      {
+        "singer": "WHITNEY HOUSTON",
+        "title": "TAKE GOOD CARE OF MY HEART THE"
+      }
+    ],
+    "longSongs": [
+      {
+        "singer": "CRISTIANO MALGIOGLIO",
+        "title": "MI SONO INNAMORATO DI TUO MARITO (VERSIONE REGGAETON - ITALIANO)",
+        "length": 64
+      },
+      {
+        "singer": "DJ OTZI",
+        "title": "CAN'T TAKE MY EYES OFF OF YOU DER HELLSTE STERN (BÃ–HMISCHER TRAUM)",
+        "length": 67
+      },
+      {
+        "singer": "FABIO CONCATO",
+        "title": "DOMENICA BESTIALE DOMENICA BESTIALE (BOSSANOVA STYLE) È FESTA",
+        "length": 61
+      },
+      {
+        "singer": "GIANNI MORANDI",
+        "title": "AMOR Y CHA CHA CHA ANDAVO A CENTO ALL'ORA APRI TUTTE LE PORTE BANANE E LAMPONE BANANE E LAMPONE (LIVE)",
+        "length": 102
+      },
+      {
+        "singer": "GIANNI MORANDI",
+        "title": "C'ERA UN RAGAZZO CHE COME ME AMAVA I BEATLES E I ROLLING STONES (LIVE)",
+        "length": 70
+      },
+      {
+        "singer": "JULIO IGLESIAS",
+        "title": "POR EL AMOR DE UNA MUJER QUANDO SI AMA DAVVERO QUE NADIE SEPA MI SUFRIR QUIERO (LOVE STORY)",
+        "length": 91
+      },
+      {
+        "singer": "NICCOLÃ’ FABI",
+        "title": "L'AMORE NON ESISTE LASCIARSI UN GIORNO A ROMA MI PIACE COME SEI (ME GUSTA COMO ERES)",
+        "length": 84
+      },
+      {
+        "singer": "ORNELLA VANONI",
+        "title": "DOMANI È UN ALTRO GIORNO DOMANI È UN ALTRO GIORNO (M-LIVE EDIT)",
+        "length": 63
+      },
+      {
+        "singer": "ULTIMO",
+        "title": "POESIA SENZA VELI QUANDO FUORI PIOVE QUEI DUE INNAMORATI QUEL FILO CHE CI UNISCE ROMA CAPOCCIA (LIVE)",
+        "length": 101
+      },
+      {
+        "singer": "ULTIMO",
+        "title": "TI DEDICO IL SILENZIO TI VA DI STARE BENE TORNARE A TE (LIVE)",
+        "length": 61
+      },
+      {
+        "singer": "ANNIE LENNOX",
+        "title": "LOVE SONG FOR A VAMPIRE NO MORE I LOVE YOU'S THERE MUST BE AN ANGEL (PLAYING WITH MY HEART)",
+        "length": 91
+      },
+      {
+        "singer": "FABRIZIO DE ANDRÃˆ",
+        "title": "LA BALLATA DELL'AMORE CIECO LA CANZONE DELL'AMORE PERDUTO (LIVE)",
+        "length": 64
+      },
+      {
+        "singer": "FAHRENHEIT 451",
+        "title": "BANDIERA BIANCA CAFFÈ DE LA PAIX CENTRO DI GRAVITÀ PERMANENTE CENTRO DI GRAVITÀ PERMANENTE (LIVE)",
+        "length": 97
+      },
+      {
+        "singer": "FRANCO CALIFANO",
+        "title": "TUTTO IL RESTO È NOIA UN TEMPO PICCOLO UN'ESTATE FA (UNE BELLE HISTOIRE)",
+        "length": 72
+      },
+      {
+        "singer": "FRANCO IV E FRANCO I",
+        "title": "DOVE VA A FINIRE IL MIO AFFETTO E ADESSO LA PUBBLICITÀ (LIVE)",
+        "length": 61
+      },
+      {
+        "singer": "FRANCO IV E FRANCO I",
+        "title": "SOLO CHI SI AMA VERAMENTE SOLO INSIEME SAREMO FELICI STRADA FACENDO (LIVE)",
+        "length": 74
+      },
+      {
+        "singer": "LED ZEPPELIN",
+        "title": "SINCE I'VE BEEN LOVING YOU STAIRWAY TO HEAVEN STAIRWAY TO HEAVEN (RADIO EDIT)",
+        "length": 77
+      },
+      {
+        "singer": "LUCIO BATTISTI",
+        "title": "IL NOSTRO CARO ANGELO IL TEMPO DI MORIRE INNOCENTI EVASIONI INSIEME A TE STO BENE IO VIVRÃ’ (SENZA TE)",
+        "length": 102
+      },
+      {
+        "singer": "MODERN TALKING",
+        "title": "NO FACE, NO NAME, NO NUMBER YOU'RE MY HEART, YOU'RE MY SOUL ('98 REMIX)",
+        "length": 71
+      },
+      {
+        "singer": "POOH",
+        "title": "IO NON MI STANCHERÃ’ MAI DI TE L'AMORE CHE TI CAMBIA (LIVE ARENA DI VERONA)",
+        "length": 75
+      },
+      {
+        "singer": "POOH",
+        "title": "L'AMORE SUBLIME L'ANGELO FERITO L'AQUILONE PIERO L'AVVENTURIERO (LIVE)",
+        "length": 70
+      },
+      {
+        "singer": "POOH",
+        "title": "SILENZIO CHE LO SGUARDO TUO PARLA PER TE (SORRY SEEMS TO BE THE HARDEST WORD)",
+        "length": 77
+      },
+      {
+        "singer": "RON",
+        "title": "CANZONE SENZA INGANNI CHISSÀ SE LO SAI FERITE E LACRIME (YOU)",
+        "length": 61
+      },
+      {
+        "singer": "TINA TURNER",
+        "title": "I DON'T WANNA LOSE YOU I HEARD IT THROUGH THE GRAPEVINE (LIVE)",
+        "length": 62
+      },
+      {
+        "singer": "UMBERTO TOZZI",
+        "title": "COME UNA DANZA CONCHIGLIA DI DIAMANTE DIMENTICA DIMENTICA (LIVE)",
+        "length": 64
+      },
+      {
+        "singer": "ZUCCHERO",
+        "title": "LA CANZONE CHE SE NE VA LA TORTURA DELLA LUNA LIKE THE SUN (COME IL SOLE ALL'IMPROVVISO)",
+        "length": 88
+      },
+      {
+        "singer": "ALLE FARBEN",
+        "title": "CHE TESORO CHE SEI CI VORREBBE UN AMICO CI VORREBBE UN AMICO (VERSIONE SALSA)",
+        "length": 77
+      },
+      {
+        "singer": "ARETHA FRANKLIN",
+        "title": "HYMN FOR THE WEEKEND IF I WERE A BOY IRREPLACEABLE IRREPLACEABLE (IRREEMPLAZABLE)",
+        "length": 81
+      },
+      {
+        "singer": "BRYAN ADAMS",
+        "title": "IT'S ONLY LOVE PLEASE FORGIVE ME PLEASE FORGIVE ME (ALTERNATIVE KEY)",
+        "length": 68
+      },
+      {
+        "singer": "CLAUDIO BAGLIONI",
+        "title": "C'ERA UN RAGAZZO CHE COME ME AMAVA I BEATLES E I ROLLING STONES (LIVE)",
+        "length": 70
+      },
+      {
+        "singer": "JESSIE REYEZ",
+        "title": "I SHOULD HAVE KNOWN BETTER EINE INSEL MIT ZWEI BERGEN WHO (ROCK REMIX)",
+        "length": 70
+      },
+      {
+        "singer": "LEWIS CAPALDI",
+        "title": "HOLD ME WHILE YOU WAIT SOMEONE YOU LOVED SOMEONE YOU LOVED (FEMALE TUNE)",
+        "length": 72
+      },
+      {
+        "singer": "LIGABUE",
+        "title": "HO FATTO IN TEMPO AD AVERE UN FUTURO (CHE NON FOSSE SOLTANTO PER ME)",
+        "length": 68
+      },
+      {
+        "singer": "NOMADI",
+        "title": "HASTA SIEMPRE COMANDANTE HO DIFESO IL MIO AMORE (NIGHTS IN WHITE SATIN)",
+        "length": 71
+      },
+      {
+        "singer": "ARISA",
+        "title": "UNA NUOVA ROSALBA IN CITTÀ VACANZE ROMANE (LIVE SANREMO 2020)",
+        "length": 61
+      },
+      {
+        "singer": "BIANCA ATZEI",
+        "title": "LA PAURA CHE HO DI PERDERTI LA STRADA PER LA FELICITÀ (LAURA)",
+        "length": 61
+      },
+      {
+        "singer": "CARLOS MERLET",
+        "title": "RAGAZZA DI CAMPAGNA RAGAZZE DELL'EST REGINELLA REGINÈ SABATO POMERIGGIO (LIVE)",
+        "length": 78
+      },
+      {
+        "singer": "CARLOS MERLET",
+        "title": "UN PICCOLO NATALE IN PIÙ (HAVE YOURSELF A MERRY LITTLE CHRISTMAS)",
+        "length": 65
+      },
+      {
+        "singer": "ENRICO RUGGERI",
+        "title": "COME LACRIME NELLA PIOGGIA CONFUSI IN UN PLAYBACK CONTESSA (LIVE)",
+        "length": 65
+      },
+      {
+        "singer": "GINO PAOLI",
+        "title": "L'UFFICIO DELLE COSE PERDUTE LA BELLA E LA BESTIA (È UNA STORIA CHE)",
+        "length": 68
+      },
+      {
+        "singer": "I TEPPISTI DEI SOGNI",
+        "title": "LE PAROLE NON SERVONO PIÙ MARIA SALVADOR (LYRICS CD ORIGINALE)",
+        "length": 62
+      },
+      {
+        "singer": "MICKIE KRAUSE",
+        "title": "MICH HAT EIN ENGEL GEKÃœSST NIE MEHR ALKOHOL (FREIE GETRÄNKE)",
+        "length": 61
+      },
+      {
+        "singer": "RICCARDO FOGLI",
+        "title": "STORIE DI TUTTI I GIORNI STORIE DI TUTTI I GIORNI (BAND VERSION)",
+        "length": 64
+      },
+      {
+        "singer": "THE BLUE DIAMONDS",
+        "title": "VIDEO KILLED THE RADIO STAR VIDEO KILLED THE RADIO STAR (RADIO EDIT)",
+        "length": 68
+      },
+      {
+        "singer": "TONY COLOMBO",
+        "title": "SONO ANCORA IN COMA SONO INNOCENTE MA... SPLENDIDA GIORNATA SPLENDIDA GIORNATA (LIVE)",
+        "length": 85
+      },
+      {
+        "singer": "ANDREA BOCELLI",
+        "title": "SCELGO ANCORA TE (VERSIONE POP ACUSTICA) - TON.UOMO SHAPE OF YOU (REGGAETON RMX EDITION)",
+        "length": 88
+      },
+      {
+        "singer": "GEORGE MICHAEL",
+        "title": "SCELGO ANCORA TE (VERSIONE POP ACUSTICA) - TON.DONNA SENZA ALI",
+        "length": 62
+      },
+      {
+        "singer": "LADY GAGA",
+        "title": "ALWAYS REMEMBER US THIS WAY ALWAYS REMEMBER US THIS WAY (TIK TOK VIRAL)",
+        "length": 71
+      },
+      {
+        "singer": "MALIKA AYANE",
+        "title": "L'AMORE È UN ATTIMO L'AMORE È UNA COSA MERAVIGLIOSA L'ISTRIONE (LIVE)",
+        "length": 69
+      },
+      {
+        "singer": "MINA",
+        "title": "ANCORA ANCORA ANCORA ANCORA ANCORA ANCORA (MARK RONSON REMIX)",
+        "length": 61
+      },
+      {
+        "singer": "PHIL COLLINS",
+        "title": "A GROOVY KIND OF LOVE AGAINST ALL ODDS (TAKE A LOOK AT ME KNOW)",
+        "length": 63
+      },
+      {
+        "singer": "RINO GAETANO",
+        "title": "MA IL CIELO È SEMPRE PIÙ BLU MA IL CIELO È SEMPRE PIÙ BLU (MOLELLA RMX)",
+        "length": 71
+      },
+      {
+        "singer": "ELIO E LE STORIE TESE",
+        "title": "IL VITELLO DAI PIEDI DI BALSA ILLIMITATAMENTE (UNLIMITED - PINO IL PINGUINO)",
+        "length": 76
+      },
+      {
+        "singer": "ELISA",
+        "title": "UN FILO DI SETA NEGLI ABISSI UNA POESIA ANCHE PER TE (LIFE GOES ON)",
+        "length": 67
+      },
+      {
+        "singer": "IRENE GRANDI",
+        "title": "LA TUA RAGAZZA SEMPRE O È NATALE TUTTI I GIORNI (MORE THAN WORDS)",
+        "length": 65
+      },
+      {
+        "singer": "IVA ZANICCHI",
+        "title": "LA RIVA BIANCA, LA RIVA NERA TESTARDA IO (LA MIA SOLITUDINE) (A DISTANCIA)",
+        "length": 74
+      },
+      {
+        "singer": "RANDY CRAWFORD",
+        "title": "KNOCKIN' ON HEAVEN'S DOOR LEAVE ME OR LOVE ME STREET LIFE (RADIO EDIT)",
+        "length": 70
+      },
+      {
+        "singer": "STING",
+        "title": "IF I EVER LOSE MY FAITH IN YOU IF YOU LOVE SOMEBODY (SET THEM FREE)",
+        "length": 67
+      },
+      {
+        "singer": "THE REAL THING",
+        "title": "I'LL BE THERE FOR YOU L'AMORE È BLU UNCHAINED MELODY GUARDA (VERSION 2011)",
+        "length": 74
+      },
+      {
+        "singer": "THE REAL THING",
+        "title": "CHE COLPA ABBIAMO NOI È LA PIOGGIA CHE VA (REMEMBER THE RAIN)",
+        "length": 61
+      },
+      {
+        "singer": "WILSON PICKETT",
+        "title": "LAND OF THOUSAND DANCES MUSTANG SALLY UN'AVVENTURA (SOUL VERSION)",
+        "length": 65
+      }
+    ],
+    "shortSongs": [
+      {
+        "singer": "ALEJANDRO SANZ",
+        "title": "SOY"
+      },
+      {
+        "singer": "ANITA HEGERLAND",
+        "title": "SEIN"
+      },
+      {
+        "singer": "BEBE",
+        "title": "MALO"
+      },
+      {
+        "singer": "BRENDA LEE",
+        "title": "ME)"
+      },
+      {
+        "singer": "CREEDENCE CLEARWATER\nREVIVAL",
+        "title": "LODI"
+      },
+      {
+        "singer": "ELLIE GOULDING",
+        "title": "BURN"
+      },
+      {
+        "singer": "EUROPE",
+        "title": "HERO"
+      },
+      {
+        "singer": "GOO GOO DOLLS",
+        "title": "IRIS"
+      },
+      {
+        "singer": "GOTYE",
+        "title": "KNOW"
+      },
+      {
+        "singer": "IVO ROBIC",
+        "title": "AN"
+      },
+      {
+        "singer": "JACK JOHNSON",
+        "title": "STAY"
+      },
+      {
+        "singer": "JUSTIN BIEBER",
+        "title": "STAY"
+      },
+      {
+        "singer": "JUSTIN BIEBER",
+        "title": "ZERO"
+      },
+      {
+        "singer": "MEARSY",
+        "title": "DNA"
+      },
+      {
+        "singer": "MODÃ€",
+        "title": "MIA"
+      },
+      {
+        "singer": "NICKI MINAJ",
+        "title": "TUSA"
+      },
+      {
+        "singer": "ORNELLA VANONI",
+        "title": "VITA"
+      },
+      {
+        "singer": "OTIS REDDING",
+        "title": "ON)"
+      },
+      {
+        "singer": "ROBIN SCHULZ",
+        "title": "OK"
+      },
+      {
+        "singer": "SUZANNE VEGA",
+        "title": "LUKA"
+      },
+      {
+        "singer": "ULTIMO",
+        "title": "7+3"
+      },
+      {
+        "singer": "YEAH YEAH YEAHS",
+        "title": "MAPS"
+      },
+      {
+        "singer": "YEARS & YEARS",
+        "title": "KING"
+      },
+      {
+        "singer": "ZENIMA",
+        "title": "LUCE"
+      },
+      {
+        "singer": "ZERO ASSOLUTO",
+        "title": "END)"
+      },
+      {
+        "singer": "ALEX BARONI",
+        "title": "ONDE"
+      },
+      {
+        "singer": "ANNIE LENNOX",
+        "title": "WHY"
+      },
+      {
+        "singer": "BELUGA'S TRIO",
+        "title": "BE)"
+      },
+      {
+        "singer": "CHRISTINA AGUILERA",
+        "title": "HURT"
+      },
+      {
+        "singer": "ELVIS COSTELLO",
+        "title": "SHE"
+      },
+      {
+        "singer": "GUNTER GABRIEL",
+        "title": "GELD"
+      },
+      {
+        "singer": "HADDAWAY",
+        "title": "LIFE"
+      },
+      {
+        "singer": "JAIN",
+        "title": "COME"
+      },
+      {
+        "singer": "JAMES BLUNT",
+        "title": "1973"
+      },
+      {
+        "singer": "KAROL G",
+        "title": "TUSA"
+      },
+      {
+        "singer": "KATRINA AND THE WAVES",
+        "title": "ROAR"
+      },
+      {
+        "singer": "LENNY KRAVITZ",
+        "title": "PUSH"
+      },
+      {
+        "singer": "MARCO MENGONI",
+        "title": "LUCE"
+      },
+      {
+        "singer": "MERYL STREEP",
+        "title": "SOS"
+      },
+      {
+        "singer": "MIA MARTINI",
+        "title": "VOLA"
+      },
+      {
+        "singer": "MICHAEL BUBLÃˆ",
+        "title": "HOME"
+      },
+      {
+        "singer": "MÃ–HRE",
+        "title": "HAUS"
+      },
+      {
+        "singer": "PAOLO VALLESI",
+        "title": "C'È"
+      },
+      {
+        "singer": "TIM BENDZKO",
+        "title": "HOCH"
+      },
+      {
+        "singer": "VAN HALEN",
+        "title": "JUMP"
+      },
+      {
+        "singer": "ZUCCHERO",
+        "title": "BLU"
+      },
+      {
+        "singer": "ACHILLE LAURO",
+        "title": "1969"
+      },
+      {
+        "singer": "ACHILLE LAURO",
+        "title": "AMOR"
+      },
+      {
+        "singer": "ALFA",
+        "title": "VAI!"
+      },
+      {
+        "singer": "ANTONIO CARLOS JOBIM",
+        "title": "WAVE"
+      },
+      {
+        "singer": "ARETHA FRANKLIN",
+        "title": "HALO"
+      },
+      {
+        "singer": "BIAGIO ANTONACCI",
+        "title": "SEI"
+      },
+      {
+        "singer": "DRUPI",
+        "title": "SOLI"
+      },
+      {
+        "singer": "ENRICO MONTESANO",
+        "title": "VA)"
+      },
+      {
+        "singer": "FRANK SINATRA",
+        "title": "WAVE"
+      },
+      {
+        "singer": "GIANNI TOGNI",
+        "title": "LUNA"
+      },
+      {
+        "singer": "GIBSON BROTHERS",
+        "title": "CUBA"
+      },
+      {
+        "singer": "GIGI D'ALESSIO",
+        "title": "VITA"
+      },
+      {
+        "singer": "GIGI D'ALESSIO",
+        "title": "VIVI"
+      },
+      {
+        "singer": "KEKKO SILVESTRE",
+        "title": "FUMO"
+      },
+      {
+        "singer": "KEYSHIA COLE",
+        "title": "LOVE"
+      },
+      {
+        "singer": "LEVANTE",
+        "title": "VIVO"
+      },
+      {
+        "singer": "LUCIO DALLA",
+        "title": "1983"
+      },
+      {
+        "singer": "LUCIO DALLA",
+        "title": "VITA"
+      },
+      {
+        "singer": "MARK RONSON",
+        "title": "LOST"
+      },
+      {
+        "singer": "MICHAEL WENDLER",
+        "title": "EGAL"
+      },
+      {
+        "singer": "NATALIE COLE",
+        "title": "LOVE"
+      },
+      {
+        "singer": "PRINCE",
+        "title": "KISS"
+      },
+      {
+        "singer": "PROPAGANDA",
+        "title": "DUEL"
+      },
+      {
+        "singer": "PSY",
+        "title": "VIVO"
+      },
+      {
+        "singer": "ROSA LINN",
+        "title": "SNAP"
+      },
+      {
+        "singer": "ROSARIO MIRAGGIO",
+        "title": "MALE"
+      },
+      {
+        "singer": "ROSÃˆ",
+        "title": "APT"
+      },
+      {
+        "singer": "ROSE VILLAIN",
+        "title": "MMH"
+      },
+      {
+        "singer": "TEN SHARP",
+        "title": "YOU"
+      },
+      {
+        "singer": "THASUP",
+        "title": "!LY"
+      },
+      {
+        "singer": "VASCO ROSSI",
+        "title": "CIAO"
+      },
+      {
+        "singer": "VASCO ROSSI",
+        "title": "ME)"
+      },
+      {
+        "singer": "ALOE BLACC",
+        "title": "SOS"
+      },
+      {
+        "singer": "AMALIA GRÃˆ",
+        "title": "DUO)"
+      },
+      {
+        "singer": "AMEDEO MINGHI",
+        "title": "1950"
+      },
+      {
+        "singer": "ARISA",
+        "title": "PACE"
+      },
+      {
+        "singer": "BILLY JOE THOMAS",
+        "title": "HEAD"
+      },
+      {
+        "singer": "CAPTAIN SENSIBLE",
+        "title": "WOT"
+      },
+      {
+        "singer": "DEE DEE BRIDGEWATER",
+        "title": "BURN"
+      },
+      {
+        "singer": "ED SHEERAN",
+        "title": "SING"
+      },
+      {
+        "singer": "ENRIQUE IGLESIAS",
+        "title": "HERO"
+      },
+      {
+        "singer": "FUGEES",
+        "title": "SONG"
+      },
+      {
+        "singer": "GIORDANA ANGI",
+        "title": "CASA"
+      },
+      {
+        "singer": "I TEPPISTI DEI SOGNI",
+        "title": "MOOD"
+      },
+      {
+        "singer": "JOAN THIELE",
+        "title": "ECO"
+      },
+      {
+        "singer": "JOE COCKER",
+        "title": "ONE"
+      },
+      {
+        "singer": "JOEL CORRY",
+        "title": "BED"
+      },
+      {
+        "singer": "KRISTINA BACH",
+        "title": "DA"
+      },
+      {
+        "singer": "LIGHTHOUSE FAMILY",
+        "title": "HIGH"
+      },
+      {
+        "singer": "MARY J.BLIGE",
+        "title": "AS"
+      },
+      {
+        "singer": "NEGRAMARO",
+        "title": "SEI"
+      },
+      {
+        "singer": "PEPPINO DI CAPRI",
+        "title": "ROMA"
+      },
+      {
+        "singer": "PETER CORNELIUS",
+        "title": "DICH"
+      },
+      {
+        "singer": "PUPO",
+        "title": "CIAO"
+      },
+      {
+        "singer": "PUSSYCAT DOLLS",
+        "title": "BEEP"
+      },
+      {
+        "singer": "SABRINA SALERNO",
+        "title": "BOYS"
+      },
+      {
+        "singer": "SAM BROWNE",
+        "title": "STOP"
+      },
+      {
+        "singer": "SONIQUE",
+        "title": "SKY"
+      },
+      {
+        "singer": "THE BEATLES",
+        "title": "GIRL"
+      },
+      {
+        "singer": "ANASTACIA",
+        "title": "TIME"
+      },
+      {
+        "singer": "ANDREA BERG",
+        "title": "SEIN"
+      },
+      {
+        "singer": "ANDREA BOCELLI",
+        "title": "A TE"
+      },
+      {
+        "singer": "AVICII",
+        "title": "SOS"
+      },
+      {
+        "singer": "CARPENTERS",
+        "title": "BE)"
+      },
+      {
+        "singer": "COEZ",
+        "title": "!LY"
+      },
+      {
+        "singer": "EDUARDO DE CRESCENZO",
+        "title": "DOVE"
+      },
+      {
+        "singer": "EDUARDO DE CRESCENZO",
+        "title": "VOLA"
+      },
+      {
+        "singer": "ERIC CARMEN",
+        "title": "LIPS"
+      },
+      {
+        "singer": "EROS RAMAZZOTTI",
+        "title": "AMA"
+      },
+      {
+        "singer": "FLEETWOOD MAC",
+        "title": "SARA"
+      },
+      {
+        "singer": "GEMELLI DIVERSI",
+        "title": "VAI"
+      },
+      {
+        "singer": "INDUSTRY",
+        "title": "NERA"
+      },
+      {
+        "singer": "LA RAPPRESENTANTE DI\nLISTA",
+        "title": "DIVA"
+      },
+      {
+        "singer": "LITFIBA",
+        "title": "TEX"
+      },
+      {
+        "singer": "LOBO",
+        "title": "BOO"
+      },
+      {
+        "singer": "MATCHBOX TWENTY",
+        "title": "3 AM"
+      },
+      {
+        "singer": "NEGRITA",
+        "title": "1989"
+      },
+      {
+        "singer": "ONE DIRECTION",
+        "title": "HOME"
+      },
+      {
+        "singer": "PIERDAVIDE CARONE",
+        "title": "PAN)"
+      },
+      {
+        "singer": "RAF",
+        "title": "DUE"
+      },
+      {
+        "singer": "SANANDA MAITREYA\n(TERENCE TRENT D'ARBY)",
+        "title": "RAIN"
+      },
+      {
+        "singer": "STADIO",
+        "title": "C'È"
+      },
+      {
+        "singer": "THE CULT",
+        "title": "RAIN"
+      },
+      {
+        "singer": "THE DUKES OF DIXIELAND",
+        "title": "IN"
+      },
+      {
+        "singer": "THE FEELING",
+        "title": "SEWN"
+      },
+      {
+        "singer": "VIOLA VALENTINO",
+        "title": "SOLA"
+      },
+      {
+        "singer": "VITTORIO DE SCALZI",
+        "title": "N.2)"
+      },
+      {
+        "singer": "WESTERNHAGEN",
+        "title": "SEXY"
+      },
+      {
+        "singer": "PIKOTARO",
+        "title": "PEN)"
+      },
+      {
+        "singer": "AIELLO",
+        "title": "ORA"
+      },
+      {
+        "singer": "AKA 7EVEN",
+        "title": "LOCA"
+      },
+      {
+        "singer": "BABY K",
+        "title": "LUNA"
+      },
+      {
+        "singer": "CESARE CREMONINI",
+        "title": "46"
+      },
+      {
+        "singer": "COUSTEAU",
+        "title": "YEAR"
+      },
+      {
+        "singer": "DIE SCHLAGERPILOTEN",
+        "title": "RIO"
+      },
+      {
+        "singer": "ELISA",
+        "title": "SETA"
+      },
+      {
+        "singer": "ELLA ENDLICH",
+        "title": "SOY"
+      },
+      {
+        "singer": "FRANCESCO GABBANI",
+        "title": "AMEN"
+      },
+      {
+        "singer": "IRENE FORNACIARI",
+        "title": "BLU"
+      },
+      {
+        "singer": "IVAN CATTANEO",
+        "title": "RMX"
+      },
+      {
+        "singer": "JOVANOTTI",
+        "title": "A TE"
+      },
+      {
+        "singer": "LONG JOHN BALDRY",
+        "title": "DEW"
+      },
+      {
+        "singer": "LORNA",
+        "title": "MMMM"
+      },
+      {
+        "singer": "LOS BRAVOS",
+        "title": "BLU"
+      },
+      {
+        "singer": "MANHATTAN TRANSFER",
+        "title": "AGUA"
+      },
+      {
+        "singer": "MAX PEZZALI",
+        "title": "RASO"
+      },
+      {
+        "singer": "NELLY FURTADO",
+        "title": "TRY"
+      },
+      {
+        "singer": "RANDY CRAWFORD",
+        "title": "WHY"
+      },
+      {
+        "singer": "RAYE",
+        "title": "BED"
+      },
+      {
+        "singer": "STEFANO SANI",
+        "title": "LISA"
+      },
+      {
+        "singer": "STEVIE WONDER",
+        "title": "LIFE"
+      },
+      {
+        "singer": "STING",
+        "title": "OK"
+      },
+      {
+        "singer": "TRAVIS",
+        "title": "SING"
+      },
+      {
+        "singer": "U2",
+        "title": "BAD"
+      },
+      {
+        "singer": "U2",
+        "title": "ONE"
+      },
+      {
+        "singer": "WILL.I.AM",
+        "title": "BEEP"
+      }
+    ],
+    "encodingIssues": [
+      {
+        "singer": "ANITA HEGERLAND",
+        "title": "SCHÃ–N IST ES AUF DER WELT ZU"
+      },
+      {
+        "singer": "ANNA OXA",
+        "title": "TI LASCERÃ’"
+      },
+      {
+        "singer": "ANNA-MARIA ZIMMERMANN",
+        "title": "1000 TRÄUME WEIT (TORNERÃ’)"
+      },
+      {
+        "singer": "BRIGA",
+        "title": "UN PÃ’ COME LA VITA"
+      },
+      {
+        "singer": "BRIGA",
+        "title": "KÃ–LSCHE JUNG MIR SIN KÃ–LSCHE MIR SINGE ALAAF!"
+      },
+      {
+        "singer": "CRISTINA D'AVENA",
+        "title": "CROMA LATINA LLEGÃ’"
+      },
+      {
+        "singer": "DJ OTZI",
+        "title": "A MANN FÃœR AMORE ANTON AUS TIROL"
+      },
+      {
+        "singer": "DJ OTZI",
+        "title": "CAN'T TAKE MY EYES OFF OF YOU DER HELLSTE STERN (BÃ–HMISCHER TRAUM)"
+      },
+      {
+        "singer": "DJ OTZI",
+        "title": "WAS FÃœR EINE GEILE ZEIT"
+      },
+      {
+        "singer": "DOJA CAT",
+        "title": "KÃœSS MICH, HALT MICH, LIEB MICH"
+      },
+      {
+        "singer": "EXTRABREIT",
+        "title": "FLIEGER GRÃœSS MIR DIE SONNE HURRA, HURRA, DIE SCHULE"
+      },
+      {
+        "singer": "FABIO CONCATO",
+        "title": "QUANDO SARÃ’ GRANDE RITROVARTI QUI ROSALINA"
+      },
+      {
+        "singer": "FRANCESCO GUCCINI",
+        "title": "TI INSEGNERÃ’ A VOLARE"
+      },
+      {
+        "singer": "FRANCESCO RENGA",
+        "title": "SCRIVERÃ’ IL TUO NOME"
+      },
+      {
+        "singer": "GIANNI BELLA",
+        "title": "NON SI PUÃ’ MORIRE DENTRO PIÙ CI PENSO"
+      },
+      {
+        "singer": "GRAHAM CANDY",
+        "title": "LA PIOGGIA DI MARZO (AGUAS DE MARÃ‡O)"
+      },
+      {
+        "singer": "JULIO IGLESIAS",
+        "title": "SOY UN TRUHÃ•N, SOY UN SEÃ‘OR"
+      },
+      {
+        "singer": "JULIO IGLESIAS",
+        "title": "UNA DONNA PUÃ’ CAMBIAR LA"
+      },
+      {
+        "singer": "LOS HERMANOS ROSARIO",
+        "title": "LA DUEÃ‘A DEL SWING"
+      },
+      {
+        "singer": "MANUEL TURIZO",
+        "title": "COPA VACÃ•A"
+      },
+      {
+        "singer": "MARCO MASINI",
+        "title": "LO STRANO PERCORSO ME LA CAVERÃ’"
+      },
+      {
+        "singer": "MARCO MASINI",
+        "title": "TORNO SUBITO TUTTO CIÃ’ CHE HO UN GIORNO COSÌ"
+      },
+      {
+        "singer": "MAXL GRAF",
+        "title": "IN MÃœNCHEN STEHT EIN"
+      },
+      {
+        "singer": "MELISSA NASCHENWENG",
+        "title": "BLÃ–DSINN IM KOPF DIFIGIANO"
+      },
+      {
+        "singer": "MELISSA NASCHENWENG",
+        "title": "G'FÃœHL"
+      },
+      {
+        "singer": "NIK P",
+        "title": "MIT DEN FÃœSSEN IM MEER WENN DU SCHWEIGST"
+      },
+      {
+        "singer": "ORNELLA VANONI",
+        "title": "INSIEME A TE NON CI STO PIÙ IO COME FARÃ’"
+      },
+      {
+        "singer": "ORNELLA VANONI",
+        "title": "IO SO CHE TI AMERÃ’ (D-VERSE)"
+      },
+      {
+        "singer": "ORNELLA VANONI",
+        "title": "IO TI DARÃ’ DI PIÙ (M-LIVE EDIT)"
+      },
+      {
+        "singer": "PAOLA & CHIARA",
+        "title": "E SÃ’ CUNTENTO 'E STÀ (LIVE) FEMMENA"
+      },
+      {
+        "singer": "PAOLA & CHIARA",
+        "title": "IT'S A BEAUTIFUL DAY JE SÃ’ PAZZO"
+      },
+      {
+        "singer": "PAOLA & CHIARA",
+        "title": "JE SÃ’ PAZZO (JAZZY VERSION) JE STO VICINO A TE"
+      },
+      {
+        "singer": "RENATO CAROSONE",
+        "title": "TU VUÃ’ FA L'AMERICANO"
+      },
+      {
+        "singer": "RENATO ZERO",
+        "title": "ED IO TI SEGUIRÃ’ (LIVE)"
+      },
+      {
+        "singer": "ROBERTO VECCHIONI",
+        "title": "TI INSEGNERÃ’ A VOLARE"
+      },
+      {
+        "singer": "ROBY FACCHINETTI",
+        "title": "RINASCERÃ’ RINASCERAI (PER LA MIA CITTÀ FERITA)"
+      },
+      {
+        "singer": "STS",
+        "title": "FÃœRSTENFELD"
+      },
+      {
+        "singer": "THE SCRIPT",
+        "title": "THE MAN WHO CANâ€™T BE MOVED"
+      },
+      {
+        "singer": "UDO JÃœRGENS",
+        "title": "PECCATO CHE SIA FINITA COSÌ SIEBZEHN JAHR, BLONDES HAAR UDO JÃœRGENS HIT-MEDLEY (LETZTES KONZERT ZÃœRICH 2014)"
+      },
+      {
+        "singer": "WOLFGANG PETRY",
+        "title": "DU GEHÃ–RST ZU MIR UND ICH GEHÃ–R ZU DIR"
+      },
+      {
+        "singer": "YOLANDA BE COOL & DCUP",
+        "title": "VUÃ’ FÀ L'AMERICANO)"
+      },
+      {
+        "singer": "YVONNE CATTERFELD",
+        "title": "FÃœR DICH"
+      },
+      {
+        "singer": "ALESSANDRO MARA",
+        "title": "CI SARÃ’"
+      },
+      {
+        "singer": "ALEX BARONI",
+        "title": "CE LA FARÃ’"
+      },
+      {
+        "singer": "ALEX BRITTI",
+        "title": "VINCERÃ’"
+      },
+      {
+        "singer": "BEN ZUCKER",
+        "title": "WAS FÃœR EINE GEILE ZEIT WIEDER ZURÃœCK"
+      },
+      {
+        "singer": "BERND STELTER",
+        "title": "MÄNNER ÃœBER 50"
+      },
+      {
+        "singer": "BRUNNER & BRUNNER",
+        "title": "SCHENK' MIR DIESE EINE NACHT WIR SIND ALLE ÃœBER 40"
+      },
+      {
+        "singer": "DON BACKY",
+        "title": "PREGHERÃ’ (STAND BY ME)"
+      },
+      {
+        "singer": "DONATELLA RETTORE",
+        "title": "DI NOTTE SPECIALMENTE DISCO PROSECCO (SPRITZ Câ€™EST CHIC)"
+      },
+      {
+        "singer": "FRANCO IV E FRANCO I",
+        "title": "NON TI DIMENTICHERÃ’ (RADIO EDIT)"
+      },
+      {
+        "singer": "FRANCO IV E FRANCO I",
+        "title": "SI PUÃ’ DARE DI PIÙ"
+      },
+      {
+        "singer": "FRANCO IV E FRANCO I",
+        "title": "SI PUÃ’ DARE DI PIÙ (LIVE)"
+      },
+      {
+        "singer": "HANSI HINTERSEER",
+        "title": "MARINA (VERSIONE ITALIANA) WAS FÃœR EIN GLÃœCK"
+      },
+      {
+        "singer": "KAREL GOTT",
+        "title": "FÃœR IMMER JUNG (FOREVER"
+      },
+      {
+        "singer": "KASTELRUTHER SPATZEN",
+        "title": "ZEIT FÃœR VOLKMUSIK"
+      },
+      {
+        "singer": "LUCA DIRISIO",
+        "title": "SPARIRÃ’"
+      },
+      {
+        "singer": "LUCIO BATTISTI",
+        "title": "AMARSI UN PÃ’"
+      },
+      {
+        "singer": "LUCIO BATTISTI",
+        "title": "IL NOSTRO CARO ANGELO IL TEMPO DI MORIRE INNOCENTI EVASIONI INSIEME A TE STO BENE IO VIVRÃ’ (SENZA TE)"
+      },
+      {
+        "singer": "MARCO MENGONI",
+        "title": "MANDARE TUTTO ALL'ARIA MI FIDERÃ’"
+      },
+      {
+        "singer": "MICHAEL BUBLÃˆ",
+        "title": "SARÃ’ SINCERO"
+      },
+      {
+        "singer": "POOH",
+        "title": "CANTERÃ’ PER TE CANZONE PER L'INVERNO CAPITA"
+      },
+      {
+        "singer": "POOH",
+        "title": "CI PENSERÃ’ DOMANI COME SI FA"
+      },
+      {
+        "singer": "POOH",
+        "title": "COSA SI PUÃ’ DIRE DI TE COSÌ TI AMO (TO LOVE SOMEBODY)"
+      },
+      {
+        "singer": "POOH",
+        "title": "IO TI ASPETTERÃ’ ISABEL"
+      },
+      {
+        "singer": "POOH",
+        "title": "NASCERÃ’ CON TE"
+      },
+      {
+        "singer": "POOH",
+        "title": "IO NON MI STANCHERÃ’ MAI DI TE L'AMORE CHE TI CAMBIA (LIVE ARENA DI VERONA)"
+      },
+      {
+        "singer": "POOH",
+        "title": "QUANDO PARLERÃ’ DI TE QUANTO TI AMO"
+      },
+      {
+        "singer": "SHAKIRA",
+        "title": "CHANTAJE COPA VACÃ•A DARE (LA LA LA) DON'T BOTHER"
+      },
+      {
+        "singer": "UMBERTO TOZZI",
+        "title": "IMMENSAMENTE IO CAMMINERÃ’ IO MUOIO DI TE"
+      },
+      {
+        "singer": "UMBERTO TOZZI",
+        "title": "SI PUÃ’ DARE DI PIÙ STELLA STAI"
+      },
+      {
+        "singer": "VALERIO SCANU",
+        "title": "FINALMENTE PIOVE IO VIVRÃ’ (SENZA TE)"
+      },
+      {
+        "singer": "ABBA",
+        "title": "HASTA MAÃ‘ANA"
+      },
+      {
+        "singer": "ABBA",
+        "title": "HASTA MAÃ‘ANA (SPANISH) HONEY HONEY"
+      },
+      {
+        "singer": "ACHILLE LAURO",
+        "title": "TU VUÃ’ FA L'AMERICANO"
+      },
+      {
+        "singer": "ALEXIA",
+        "title": "NON TI DIMENTICHERÃ’ (RADIO EDIT)"
+      },
+      {
+        "singer": "ALICIA KEYS",
+        "title": "I WILL PRAY (PREGHERÃ’) IF I AIN'T GOT YOU"
+      },
+      {
+        "singer": "ANTONINO",
+        "title": "RESTA ANCORA UN PÃ’"
+      },
+      {
+        "singer": "BIAGIO ANTONACCI",
+        "title": "LASCIA STARE LASCIAMI ANDARE VIA LASCIATI PENSARE LAVORERÃ’"
+      },
+      {
+        "singer": "BIAGIO ANTONACCI",
+        "title": "TI PENSO RARAMENTE TI RICORDI PERCHÈ TI SAPRÃ’ ASPETTARE"
+      },
+      {
+        "singer": "BUDDY",
+        "title": "AB IN DEN SÃœDEN"
+      },
+      {
+        "singer": "CALCUTTA",
+        "title": "MAÃ‘ANA"
+      },
+      {
+        "singer": "CLAUDIA JUNG",
+        "title": "TÃœR AN TÃœR"
+      },
+      {
+        "singer": "CLAUDIO BAGLIONI",
+        "title": "QUALI ALIBI SALIRÃ’ (LIVE)"
+      },
+      {
+        "singer": "DRUPI",
+        "title": "FAMMI VOLARE PICCOLA E FRAGILE REGALAMI UN SORRISO SAMBARIÃ’"
+      },
+      {
+        "singer": "EAGLE EYE CHERRY",
+        "title": "QUANDO LE CANZONI FINIRANNO RESTA ANCORA UN PÃ’"
+      },
+      {
+        "singer": "EAGLE EYE CHERRY",
+        "title": "SARÃ’ LIBERA"
+      },
+      {
+        "singer": "FAUSTO LEALI",
+        "title": "ASPETTERÃ’ (UNCHAINED MELODY)"
+      },
+      {
+        "singer": "FAUSTO LEALI",
+        "title": "IO CAMMINERÃ’"
+      },
+      {
+        "singer": "FAUSTO LEALI",
+        "title": "TI LASCERÃ’"
+      },
+      {
+        "singer": "GIGI D'ALESSIO",
+        "title": "ASPETTANDO BENVENUTO AMORE BRIVIDI D'AMORE CANTERÃ’ DI TE"
+      },
+      {
+        "singer": "GIGI D'ALESSIO",
+        "title": "TU VUÃ’ FA L'AMERICANO UN CUORE MALATO"
+      },
+      {
+        "singer": "HELENE FISCHER",
+        "title": "ICH WILL IMMER WIEDER DIESES FIEBER SPÃœR'N"
+      },
+      {
+        "singer": "HELENE FISCHER",
+        "title": "UND MORGEN FRÃœH KÃœSS ICH DICH WACH (PARTYFOXMIX)"
+      },
+      {
+        "singer": "HILDEGARD KNEF",
+        "title": "FÃœR MICH SOLL'S ROTE ROSEN"
+      },
+      {
+        "singer": "HÃ–HNER",
+        "title": "DIE SCHÃ–NSTE STROSS ECHTE FRÃœNDE"
+      },
+      {
+        "singer": "HOLE",
+        "title": "BELLA DA MORIRE TORNERAI TORNERÃ’"
+      },
+      {
+        "singer": "HOLE",
+        "title": "DAS GRÃ–SSTE GLÃœCK DER WELT"
+      },
+      {
+        "singer": "HOLE",
+        "title": "ICH FÃœHL WIE DU"
+      },
+      {
+        "singer": "LUCIO DALLA",
+        "title": "GIGOLÃ’ (JUST A GIGOLÃ’) IL CIELO"
+      },
+      {
+        "singer": "LUIS FONSI",
+        "title": "ER GEHÃ–RT ZU MIR"
+      },
+      {
+        "singer": "MARIO BIONDI",
+        "title": "CI PENSERÃ’ DOMANI E TU COME STAI?"
+      },
+      {
+        "singer": "MARK ANTHONY",
+        "title": "NOCHE DE PAZ (SILENT NIGHT) VALIÃ’ LA PENA"
+      },
+      {
+        "singer": "MARK FORSTER",
+        "title": "CHÃ–RE"
+      },
+      {
+        "singer": "MARK FORSTER",
+        "title": "DREI UHR NACHTS ÃœBERMORGEN"
+      },
+      {
+        "singer": "MICHAEL HOLM",
+        "title": "TRÄNEN LÃœGEN NICHT"
+      },
+      {
+        "singer": "NATALINO OTTO",
+        "title": "IN CERCA DI TE (SOLO ME NE VÃ’"
+      },
+      {
+        "singer": "PATTY PRAVO",
+        "title": "IO VERRÃ’ UN GIORNO LÀ HO PROVATO TUTTO"
+      },
+      {
+        "singer": "PATTY PRAVO",
+        "title": "UN PÃ’ COME LA VITA"
+      },
+      {
+        "singer": "PSY",
+        "title": "TI PORTERÃ’ CON ME TRIANGOLO"
+      },
+      {
+        "singer": "REVOLVERHELD",
+        "title": "ICH LASS FÃœR DICH DAS LICHT AN"
+      },
+      {
+        "singer": "ROY BLACK",
+        "title": "SCHÃ–N IST ES AUF DER WELT ZU SEIN"
+      },
+      {
+        "singer": "SIMONA MOLINARI",
+        "title": "IN CERCA DI TE (SOLA ME NE VÃ’ PER LA CITTÀ)"
+      },
+      {
+        "singer": "SIMONE CRISTICCHI",
+        "title": "REGALERÃ’ UNA ROSA VORREI CANTARE COME BIAGIO"
+      },
+      {
+        "singer": "TIZIANO FERRO",
+        "title": "ADIÃ“S MI AMOR ALLA MIA ETÀ AMICI PER ERRORE"
+      },
+      {
+        "singer": "TIZIANO FERRO",
+        "title": "TI SCATTERÃ’ UNA FOTO TROPPO BUONO VALORE ASSOLUTO"
+      },
+      {
+        "singer": "ADRIANO CELENTANO",
+        "title": "CIAO RAGAZZI (RADIO EDIT) CIAO TI DIRÃ’ (LIVE)"
+      },
+      {
+        "singer": "ALVARO SOLER",
+        "title": "LIBRE MAGIA MAÃ‘ANA"
+      },
+      {
+        "singer": "AMEDEO MINGHI",
+        "title": "I RICORDI DEL CUORE IO NON TI LASCERÃ’ MAI L'IMMENSO"
+      },
+      {
+        "singer": "ARISA",
+        "title": "MALAMORENÃ’ MERAVIGLIOSO AMORE MIO MI SENTO BENE"
+      },
+      {
+        "singer": "ARRANGIAMENTO INEDITO\nM-LIVE",
+        "title": "TRIDIMENSIONALE TU SEI BELLA UBBIDIRÃ’"
+      },
+      {
+        "singer": "CARLOS MERLET",
+        "title": "SI PUÃ’ DARE DI PIÙ (LIVE) SIGNORA LIA"
+      },
+      {
+        "singer": "CARLOS MERLET",
+        "title": "UN PÃ’ DI PIÙ (LIVE) UN PO' D'AIUTO"
+      },
+      {
+        "singer": "EDDIE GRANT",
+        "title": "GIMME HOPE JÃ’ ANNA"
+      },
+      {
+        "singer": "ENRICO RUGGERI",
+        "title": "SI PUÃ’ DARE DI PIÙ SONNAMBULISMO"
+      },
+      {
+        "singer": "ENRICO RUGGERI",
+        "title": "TANGO DELLE DONNE FACILI TI AVRÃ’"
+      },
+      {
+        "singer": "FIORELLA MANNOIA",
+        "title": "LA LETTERA CHE NON SCRIVERÃ’ MAI"
+      },
+      {
+        "singer": "FRED DE PALMA",
+        "title": "TI RAGGIUNGERÃ’"
+      },
+      {
+        "singer": "FREI.WILD",
+        "title": "WIE EIN SCHÃœTZENDER ENGEL"
+      },
+      {
+        "singer": "GARETH GATES",
+        "title": "TI CERCHERÃ’ VOGLIO SAPÈ"
+      },
+      {
+        "singer": "GINO PAOLI",
+        "title": "COSA FARÃ’ DA GRANDE DUE VITE"
+      },
+      {
+        "singer": "GIORGIA",
+        "title": "I WILL PRAY (PREGHERÃ’)"
+      },
+      {
+        "singer": "I GIGANTI",
+        "title": "COMES THE RAIN - MAI LE DIRÃ’)"
+      },
+      {
+        "singer": "I SANTO CALIFORNIA",
+        "title": "TORNERÃ’"
+      },
+      {
+        "singer": "I SANTO CALIFORNIA",
+        "title": "TORNERÃ’ (BACHATA VERSION)"
+      },
+      {
+        "singer": "I SANTO CALIFORNIA",
+        "title": "TORNERÃ’ (DANCE RMX VERSION)"
+      },
+      {
+        "singer": "JOE COCKER",
+        "title": "THAT'S ALL I NEED TO KNOW (DIFENDERÃ’)"
+      },
+      {
+        "singer": "KLAUS LAGE",
+        "title": "BERÃœHRT)"
+      },
+      {
+        "singer": "KRISTINA BACH",
+        "title": "HEY, ICH SUCH' HIER NICHT DEN GRÃ–SSTEN LOVER"
+      },
+      {
+        "singer": "KRISTINA BACH",
+        "title": "MÄNNER SIND DOCH SCHLIESSLICH ZUM VERGNÃœGEN"
+      },
+      {
+        "singer": "KUNGS",
+        "title": "LIBERA NOS A MALO LUCI D'AMERICA M'ABITUERÃ’"
+      },
+      {
+        "singer": "MADAME",
+        "title": "MI FIDERÃ’ PARE"
+      },
+      {
+        "singer": "MICHELE ZARRILLO",
+        "title": "LA PRIMA COSA CHE FARÃ’ MANI NELLE MANI NELL'ESTASI"
+      },
+      {
+        "singer": "MICKIE KRAUSE",
+        "title": "SO NICHT SAGEN MÃœSST ICH NACKT SEH'N"
+      },
+      {
+        "singer": "MICKIE KRAUSE",
+        "title": "MICH HAT EIN ENGEL GEKÃœSST NIE MEHR ALKOHOL (FREIE GETRÄNKE)"
+      },
+      {
+        "singer": "NEGRAMARO",
+        "title": "E RUBERÃ’ PER TE LA LUNA ES-SENZA"
+      },
+      {
+        "singer": "OLAF DER FLIPPER",
+        "title": "WIR SAGEN DANKE SCHÃ–N"
+      },
+      {
+        "singer": "PAVEIER",
+        "title": "ES MUSS JA NICHT FÃœR IMMER SEIN"
+      },
+      {
+        "singer": "PAVEIER",
+        "title": "MIR SIN KÃ–LSCHE US KÃ–LLE AM"
+      },
+      {
+        "singer": "PETER CINCOTTI",
+        "title": "IN CERCA DI TE (SOLA ME NE VÃ’ PER LA CITTÀ)"
+      },
+      {
+        "singer": "THE BLUE DIAMONDS",
+        "title": "RAMONA (VERSIÃ“N EN ESPAÃ‘OL)"
+      },
+      {
+        "singer": "TOM ASTOR",
+        "title": "JUNGER ADLER (EIN LIED FÃœR"
+      },
+      {
+        "singer": "TOM ODELL",
+        "title": "ANOTHER LOVE (TIÃ‹STO REMIX)"
+      },
+      {
+        "singer": "ANDREA BERG",
+        "title": "DIESE NACHT IST JEDE SÃœNDE WERT"
+      },
+      {
+        "singer": "ANDREA BERG",
+        "title": "ICH WÃœRD'S WIEDER TUN KILIMANDSCHARO"
+      },
+      {
+        "singer": "ANDREA BERG",
+        "title": "VIEL ZU SCHÃ–N UM WAHR ZU"
+      },
+      {
+        "singer": "ANDREA BOCELLI",
+        "title": "CHEEK TO CHEEK CON TE PARTIRÃ’"
+      },
+      {
+        "singer": "CAT STEVENS",
+        "title": "NESSUNO MI PUÃ’ GIUDICARE PERDONO"
+      },
+      {
+        "singer": "CLIFF RICHARD",
+        "title": "ROTE LIPPEN SOLL MAN KÃœSSEN SUDDENLY"
+      },
+      {
+        "singer": "CLUB DOGO",
+        "title": "UBBIDIRÃ’"
+      },
+      {
+        "singer": "DEMIS ROUSSOS",
+        "title": "PROFETA NON SARÃ’"
+      },
+      {
+        "singer": "DIE AMIGOS",
+        "title": "CORDULA GRÃœN GIANNA (SCHLAGER POP - VERSIONE ITALIANA)"
+      },
+      {
+        "singer": "DIE AMIGOS",
+        "title": "ABER DICH GIBT'S NUR EINMAL FÃœR MICH"
+      },
+      {
+        "singer": "DIE AMIGOS",
+        "title": "VENDERÃ’"
+      },
+      {
+        "singer": "FLORIAN FESL",
+        "title": "DA WIRD SOGAR DIE SÃœNDE ROT"
+      },
+      {
+        "singer": "FLORIAN SILBEREISEN",
+        "title": "GEMEINSAM NIEMALS EINSAM SOMMERNACHTSGEFÃœHLE"
+      },
+      {
+        "singer": "GEORGE EZRA",
+        "title": "CASSY Ã’"
+      },
+      {
+        "singer": "GIORGIO GABER",
+        "title": "CIAO TI DIRÃ’ (LIVE)"
+      },
+      {
+        "singer": "GIOVANNI CACCAMO",
+        "title": "ETERNO RITORNERÃ’ DA TE"
+      },
+      {
+        "singer": "GITTE HAENNING",
+        "title": "SO SCHÃ–N KANN DOCH KEIN"
+      },
+      {
+        "singer": "IL GIARDINO DEI SEMPLICI",
+        "title": "NON SI PUÃ’ LEGGERE NEL CUORE TAMBURINO"
+      },
+      {
+        "singer": "INDUSTRY",
+        "title": "NUR MIT BIER SI NO ESTÃ•S"
+      },
+      {
+        "singer": "JORGE BEN JOR",
+        "title": "EXPRESSO & TSCHIANTI ICH GEHÃ–R REPARIERT"
+      },
+      {
+        "singer": "LITTLE TONY",
+        "title": "BADA BAMBINA CUORE MATTO E IO VIVRÃ’"
+      },
+      {
+        "singer": "LITTLE TONY",
+        "title": "T'AMO E T'AMERÃ’"
+      },
+      {
+        "singer": "MAITE KELLY",
+        "title": "ES IST EINFACH PASSIERT FÃœR GEFÃœHLE KANN MAN NICHTS"
+      },
+      {
+        "singer": "MALIKA AYANE",
+        "title": "TI PARLERÃ’ D'AMORE TI PENSO"
+      },
+      {
+        "singer": "NEGRITA",
+        "title": "ANDALUSIA BAMBOLE BRUCERÃ’ PER TE CAMBIO"
+      },
+      {
+        "singer": "ORCHESTRA CHICCO DE\nMATTEO",
+        "title": "ÃœBER SIEBEN BRÃœCKEN MUSST DU GEHN"
+      },
+      {
+        "singer": "RIKI",
+        "title": "ASPETTERÃ’ LO STESSO CHA CHA TWIST!"
+      },
+      {
+        "singer": "RINO GAETANO",
+        "title": "IO SCRIVERÃ’"
+      },
+      {
+        "singer": "SARAH",
+        "title": "WIE SCHÃ–N DU BIST"
+      },
+      {
+        "singer": "PINO DANIELE",
+        "title": "CHE ORE SÃ’"
+      },
+      {
+        "singer": "ALAIN BARRIERE",
+        "title": "VIVRÃ’ (MA VIE)"
+      },
+      {
+        "singer": "ALBANO",
+        "title": "MORE (TI GUARDERÃ’ NEL CUORE) NEL CUORE LEI"
+      },
+      {
+        "singer": "ANDREAS GABALIER",
+        "title": "I SING A LIAD FÃœR DI LIEBELEBEN"
+      },
+      {
+        "singer": "ANDREAS MARTIN",
+        "title": "DEINE FLÃœGEL FANGEN FEUER"
+      },
+      {
+        "singer": "BOBBY SOLO",
+        "title": "SWAY (QUIÉN SERÃ•) THAT'S AMORE"
+      },
+      {
+        "singer": "CONNIE FRANCIS",
+        "title": "SCHÃ–NER FREMDER MANN"
+      },
+      {
+        "singer": "DIE JUNGEN ZILLERTALER",
+        "title": "SO A SCHÃ–NER TAG -"
+      },
+      {
+        "singer": "DIE PALDAUER",
+        "title": "GLÃœCKLICH MACHST"
+      },
+      {
+        "singer": "ELLA ENDLICH",
+        "title": "IO AMERÃ’"
+      },
+      {
+        "singer": "ELLA ENDLICH",
+        "title": "LA NOSTRA VITA LACRIME DI GIOVENTÙ LEI PERÃ’"
+      },
+      {
+        "singer": "ELLA ENDLICH",
+        "title": "THAT'S ALL I NEED TO KNOW (DIFENDERÃ’)"
+      },
+      {
+        "singer": "ELLA ENDLICH",
+        "title": "TI DICHIARO AMORE TI SPOSERÃ’ PERCHÈ TI VORREI RIVIVERE"
+      },
+      {
+        "singer": "FRANCESCO DE GREGORI",
+        "title": "GIGOLÃ’ (JUST A GIGOLÃ’) I MATTI"
+      },
+      {
+        "singer": "FRANCESCO DE GREGORI",
+        "title": "CAMPIONE IL CUOCO DI SALÃ’ L'ABBIGLIAMENTO DI UN FUOCHISTA"
+      },
+      {
+        "singer": "GIUNI RUSSO",
+        "title": "MEDITERRANEA MORIRÃ’ D'AMORE UN'ESTATE AL MARE"
+      },
+      {
+        "singer": "JOVANOTTI",
+        "title": "IO TI CERCHERÃ’ L'ASTRONAUTA L'ESTATE ADDOSSO"
+      },
+      {
+        "singer": "JOVANOTTI",
+        "title": "MI FIDO DI TE MONTECRISTO MORIRÃ’"
+      },
+      {
+        "singer": "JOVANOTTI",
+        "title": "QUANDO SARÃ’ VECCHIO RAGAZZA MAGICA RAGAZZO FORTUNATO SABATO"
+      },
+      {
+        "singer": "JOVANOTTI",
+        "title": "TI SPOSERÃ’ TIEMPO"
+      },
+      {
+        "singer": "LARRY SCHUBA & WESTERN\nUNION",
+        "title": "ICH MÃ–CHT SO GERNE MAL NACH"
+      },
+      {
+        "singer": "LOREDANA BERTÃˆ",
+        "title": "DIMMI CHE MI AMI È ANDATA COSÌ E LA LUNA BUSSÃ’"
+      },
+      {
+        "singer": "LOREDANA BERTÃˆ",
+        "title": "E LA LUNA BUSSÃ’ (BRIT SOUL - TON.DONNA)"
+      },
+      {
+        "singer": "LOREDANA BERTÃˆ",
+        "title": "E LA LUNA BUSSÃ’ (BRIT SOUL - TON.UOMO)"
+      },
+      {
+        "singer": "LOREDANA BERTÃˆ",
+        "title": "FIGLIA DIâ€¦"
+      },
+      {
+        "singer": "LOREDANA ERRORE",
+        "title": "TI SPOSERÃ’"
+      },
+      {
+        "singer": "MALUMA",
+        "title": "EL PRESTAMO FELICES LOS 4 HAWÃ•I"
+      },
+      {
+        "singer": "MANESKIN",
+        "title": "MORIRÃ’ DA RE OWN MY MIND READ YOUR DIARY SUPERMODEL"
+      },
+      {
+        "singer": "MAX GAZZÃˆ",
+        "title": "TI SEMBRA NORMALE UNA MUSICA PUÃ’ FARE VENTO D'ESTATE"
+      },
+      {
+        "singer": "MAX PEZZALI",
+        "title": "IO CI SARÃ’"
+      },
+      {
+        "singer": "MAX PEZZALI",
+        "title": "LA SMETTERÃ’ QUESTA CANZONE"
+      },
+      {
+        "singer": "MAX PEZZALI",
+        "title": "MI FARÃ’ TROVARE PRONTO NESSUN RIMPIANTO (LIVE)"
+      },
+      {
+        "singer": "ORCHESTRA ITALIANA\nBAGUTTI",
+        "title": "OLTREPÃ’"
+      },
+      {
+        "singer": "RANDOM",
+        "title": "SONO UN BRAVO RAGAZZO UN PÃ’ FUORI DI TESTA"
+      },
+      {
+        "singer": "RAUL ABRAMZON",
+        "title": "UNA VIEJA CANCIÃ“N DE AMOR"
+      },
+      {
+        "singer": "RIO REISER",
+        "title": "KÃ–NIG VON DEUTSCHLAND"
+      },
+      {
+        "singer": "SCHÃœRZENJÃ„GER",
+        "title": "JEDE NACHT A LANGE NACHT SCHÃœRZENJÄGERZEIT SIERRA MADRE"
+      },
+      {
+        "singer": "SELENA GOMEZ",
+        "title": "ALL'ALBA SORGERÃ’ (LET IT GO -"
+      },
+      {
+        "singer": "TRUCK STOP",
+        "title": "DER WILDE WILDE WESTEN ICH MÃ–CHT SO GERN DAVE"
+      },
+      {
+        "singer": "TRUCK STOP",
+        "title": "DUDLEY HÃ–RN"
+      }
+    ]
+  }
+}

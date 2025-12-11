@@ -1,0 +1,42 @@
+/* Stili per la card info nella dashboard admin */
+.admin-card .card-info .song-line .singer-name,
+.card-info .song-line .singer-name {
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+  color: #ffd700 !important;
+  line-height: 1.6 !important;
+  vertical-align: middle !important;
+  display: inline-block !important;
+}
+
+.admin-card .card-info .song-line .song-title,
+.card-info .song-line .song-title {
+  font-size: 1.2rem !important;
+  color: #ffed4e !important;
+  font-weight: 700 !important;
+  line-height: 1.6 !important;
+  vertical-align: middle !important;
+  display: inline-block !important;
+}
+
+.admin-card .card-info .song-line .artist-name,
+.card-info .song-line .artist-name {
+  font-size: 1.2rem !important;
+  color: #ffa500 !important;
+  font-weight: 700 !important;
+  line-height: 1.6 !important;
+  vertical-align: middle !important;
+  display: inline-block !important;
+}
+
+.admin-card .card-info .song-line .separator,
+.card-info .song-line .separator {
+  color: #999 !important;
+  font-size: 1.2rem !important;
+  margin: 0 4px !important;
+  font-weight: 400 !important;
+  font-style: italic !important;
+  line-height: 1.6 !important;
+  vertical-align: middle !important;
+  display: inline-block !important;
+}
