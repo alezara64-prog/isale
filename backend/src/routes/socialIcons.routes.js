@@ -1,31 +1,14 @@
 const express = require('express');
 const router = express.Router();
 const multer = require('multer');
-const path = require('path');
-const fs = require('fs');
 const QueueModel = require('../models/queue.model');
 const { authenticateAdmin } = require('../middleware/auth.middleware');
+const supabase = require('../config/supabase');
 
-// Assicurati che la cartella uploads/social-icons esista
-const uploadsDir = path.join(__dirname, '../../uploads/social-icons');
-if (!fs.existsSync(uploadsDir)) {
-  fs.mkdirSync(uploadsDir, { recursive: true });
-}
-
-// Configurazione multer per upload delle icone
-const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, uploadsDir);
-  },
-  filename: function (req, file, cb) {
-    const platform = req.body.platform || 'icon';
-    const ext = path.extname(file.originalname);
-    cb(null, `${platform}-${Date.now()}${ext}`);
-  }
-});
+// Configurazione multer per upload in memoria
+const storage = multer.memoryStorage();
 
 const fileFilter = (req, file, cb) => {
-  // Accetta solo immagini
   if (file.mimetype.startsWith('image/')) {
     cb(null, true);
   } else {
@@ -37,11 +20,10 @@ const upload = multer({
   storage: storage,
   fileFilter: fileFilter,
   limits: {
-    fileSize: 2 * 1024 * 1024 // Max 2MB
+    fileSize: 2 * 1024 * 1024
   }
 });
 
-// GET /api/social-icons - Ottieni tutte le icone social
 router.get('/', (req, res) => {
   try {
     const icons = QueueModel.getSocialIcons();
@@ -58,8 +40,7 @@ router.get('/', (req, res) => {
   }
 });
 
-// POST /api/social-icons/upload - Upload di un'icona social (solo admin)
-router.post('/upload', authenticateAdmin, upload.single('icon'), (req, res) => {
+router.post('/upload', authenticateAdmin, upload.single('icon'), async (req, res) => {
   try {
     if (!req.file) {
       return res.status(400).json({
@@ -70,35 +51,56 @@ router.post('/upload', authenticateAdmin, upload.single('icon'), (req, res) => {
 
     const platform = req.body.platform;
     if (!platform || !['whatsapp', 'facebook', 'instagram', 'phone'].includes(platform)) {
-      // Elimina il file caricato se la piattaforma non è valida
-      fs.unlinkSync(req.file.path);
       return res.status(400).json({
         success: false,
         error: 'Piattaforma non valida. Usa: whatsapp, facebook, instagram, phone'
       });
     }
 
-    // Ottieni le icone attuali
-    const currentIcons = QueueModel.getSocialIcons();
+    const fileName = platform + '-' + Date.now() + '-' + req.file.originalname;
+    const filePath = 'social-icons/' + fileName;
 
-    // Se esiste già un'icona per questa piattaforma, elimina il vecchio file
-    if (currentIcons[platform]) {
-      const oldFilePath = path.join(__dirname, '../..', currentIcons[platform]);
-      if (fs.existsSync(oldFilePath)) {
-        fs.unlinkSync(oldFilePath);
+    const { data: uploadData, error: uploadError } = await supabase.storage
+      .from('karaoke-images')
+      .upload(filePath, req.file.buffer, {
+        contentType: req.file.mimetype,
+        upsert: false
+      });
+
+    if (uploadError) {
+      console.error('Errore upload Supabase:', uploadError);
+      return res.status(500).json({
+        success: false,
+        error: 'Errore durante il caricamento dell\'icona'
+      });
+    }
+
+    const { data: publicUrlData } = supabase.storage
+      .from('karaoke-images')
+      .getPublicUrl(filePath);
+
+    const iconUrl = publicUrlData.publicUrl;
+
+    const currentIcons = QueueModel.getSocialIcons();
+    if (currentIcons[platform] && currentIcons[platform].includes('supabase')) {
+      const urlParts = currentIcons[platform].split('/karaoke-images/');
+      if (urlParts.length > 1) {
+        const oldFilePath = urlParts[1];
+        await supabase.storage
+          .from('karaoke-images')
+          .remove([oldFilePath])
+          .catch(() => {});
       }
     }
 
-    // Salva il path relativo nel model
-    const iconPath = `/uploads/social-icons/${req.file.filename}`;
-    QueueModel.setSocialIcon(platform, iconPath);
+    QueueModel.setSocialIcon(platform, iconUrl);
 
     res.json({
       success: true,
-      message: `Icona ${platform} caricata con successo`,
+      message: 'Icona ' + platform + ' caricata con successo',
       data: {
         platform,
-        iconPath
+        iconPath: iconUrl
       }
     });
   } catch (error) {
@@ -110,8 +112,7 @@ router.post('/upload', authenticateAdmin, upload.single('icon'), (req, res) => {
   }
 });
 
-// DELETE /api/social-icons/:platform - Elimina un'icona social (solo admin)
-router.delete('/:platform', authenticateAdmin, (req, res) => {
+router.delete('/:platform', authenticateAdmin, async (req, res) => {
   try {
     const { platform } = req.params;
 
@@ -124,20 +125,25 @@ router.delete('/:platform', authenticateAdmin, (req, res) => {
 
     const currentIcons = QueueModel.getSocialIcons();
 
-    if (currentIcons[platform]) {
-      // Elimina il file
-      const filePath = path.join(__dirname, '../..', currentIcons[platform]);
-      if (fs.existsSync(filePath)) {
-        fs.unlinkSync(filePath);
+    if (currentIcons[platform] && currentIcons[platform].includes('supabase')) {
+      const urlParts = currentIcons[platform].split('/karaoke-images/');
+      if (urlParts.length > 1) {
+        const filePath = urlParts[1];
+        const { error } = await supabase.storage
+          .from('karaoke-images')
+          .remove([filePath]);
+
+        if (error) {
+          console.error('Errore rimozione da Supabase:', error);
+        }
       }
 
-      // Rimuovi dal model
       QueueModel.setSocialIcon(platform, '');
     }
 
     res.json({
       success: true,
-      message: `Icona ${platform} eliminata con successo`
+      message: 'Icona ' + platform + ' eliminata con successo'
     });
   } catch (error) {
     console.error('Errore nell\'eliminazione dell\'icona:', error);
