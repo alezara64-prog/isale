@@ -37,8 +37,44 @@ function PublicQueue() {
   const [otherSingerName, setOtherSingerName] = useState(''); // Nome per "Per..."
   const [selectedSongFromList, setSelectedSongFromList] = useState(null); // Canzone selezionata da SongList
 
-// Helper per ottenere l'URL corretto delle immagini  const getImageUrl = (path) => {    if (!path) return '';    // Se e gia un URL completo (Supabase), usalo direttamente    if (path.startsWith('http://') || path.startsWith('https://')) {      return path;    }    // Altrimenti usa l'API URL (dinamico, funziona sia in locale che in produzione)    const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3001';    return apiUrl + path;  };
-  // Carica il nome del cantante principale da localStorage all'avvio\n  // MA solo se la coda non � vuota (altrimenti cancella i dati locali)\n  useEffect(() => {\n    const savedMainSinger = localStorage.getItem('mainSingerName');\n    if (savedMainSinger) {\n      // Controlla lo stato della coda prima di ripristinare il nome\n      api.get('/api/queue').then(response => {\n        const currentQueue = response.data.data;\n        if (currentQueue.length === 0) {\n          // Coda vuota = reset completo\n          console.log('??? Coda vuota al caricamento - cancello mainSingerName da localStorage');\n          localStorage.removeItem('mainSingerName');\n          // Non impostiamo mainSingerName e chatSingerName\n        } else {\n          // Coda con elementi = ripristina il nome salvato\n          setMainSingerName(savedMainSinger);\n          setChatSingerName(savedMainSinger);\n        }\n      }).catch(err => {\n        console.error('Errore nel controllo coda iniziale:', err);\n        // In caso di errore, usa comunque il nome salvato\n        setMainSingerName(savedMainSinger);\n        setChatSingerName(savedMainSinger);\n      });\n    }\n  }, []);
+  // Helper per ottenere l'URL corretto delle immagini
+  const getImageUrl = (path) => {
+    if (!path) return '';
+    // Se è già un URL completo (Supabase), usalo direttamente
+    if (path.startsWith('http://') || path.startsWith('https://')) {
+      return path;
+    }
+    // Altrimenti usa l'API URL (dinamico, funziona sia in locale che in produzione)
+    const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+    return apiUrl + path;
+  };
+
+  // Carica il nome del cantante principale da localStorage all'avvio
+  // MA solo se la coda non è vuota (altrimenti cancella i dati locali)
+  useEffect(() => {
+    const savedMainSinger = localStorage.getItem('mainSingerName');
+    if (savedMainSinger) {
+      // Controlla lo stato della coda prima di ripristinare il nome
+      api.get('/api/queue').then(response => {
+        const currentQueue = response.data.data;
+        if (currentQueue.length === 0) {
+          // Coda vuota = reset completo
+          console.log('Coda vuota al caricamento - cancello mainSingerName da localStorage');
+          localStorage.removeItem('mainSingerName');
+          // Non impostiamo mainSingerName e chatSingerName
+        } else {
+          // Coda con elementi = ripristina il nome salvato
+          setMainSingerName(savedMainSinger);
+          setChatSingerName(savedMainSinger);
+        }
+      }).catch(err => {
+        console.error('Errore nel controllo coda iniziale:', err);
+        // In caso di errore, usa comunque il nome salvato
+        setMainSingerName(savedMainSinger);
+        setChatSingerName(savedMainSinger);
+      });
+    }
+  }, []);
 
   // Pre-compila i campi se arrivano dati dalla SongList
   useEffect(() => {
