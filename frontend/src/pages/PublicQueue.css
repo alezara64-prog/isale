@@ -39,24 +39,44 @@
   filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.3));
 }
 
-/* Responsive per logo */
+/* Responsive per logo e mobile - Centrato */
 @media (max-width: 768px) {
   .header-content {
     flex-direction: column;
     gap: 15px;
+    align-items: center;
+    text-align: center;
   }
 
   .header-logo {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
   }
 
   .header-text {
-    margin-right: 0;
+    margin-right: 0 !important;
+    width: 100%;
+    align-items: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .social-icon-img {
+    width: 35px;
+    height: 35px;
   }
 
   .header h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .venue-name {
+    font-size: 1.5rem !important;
+    text-align: center;
   }
 }
 
