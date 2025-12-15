@@ -42,6 +42,18 @@ function AdminDashboard() {
   const [eventStatus, setEventStatus] = useState({ isOpen: false });
   const [showSidebar, setShowSidebar] = useState(false);
 
+  // Helper per ottenere l'URL corretto delle immagini
+  const getImageUrl = (path) => {
+    if (!path) return '';
+    // Se è già un URL completo (Supabase), usalo direttamente
+    if (path.startsWith('http://') || path.startsWith('https://')) {
+      return path;
+    }
+    // Altrimenti usa l'API URL (dinamico, funziona sia in locale che in produzione)
+    const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+    return apiUrl + path;
+  };
+
   // Carica la coda e la password all'avvio
   useEffect(() => {
     fetchQueue();
@@ -1138,7 +1150,7 @@ function AdminDashboard() {
                 <div className="logo-section">
                   {logoPath && (
                     <div className="logo-preview-settings">
-                      <img src={`http://localhost:3001${logoPath}`} alt="Logo" />
+                      <img src={getImageUrl(logoPath)} alt="Logo" />
                     </div>
                   )}
                   <div className="logo-actions">

@@ -37,6 +37,7 @@ function PublicQueue() {
   const [otherSingerName, setOtherSingerName] = useState(''); // Nome per "Per..."
   const [selectedSongFromList, setSelectedSongFromList] = useState(null); // Canzone selezionata da SongList
 
+// Helper per ottenere l'URL corretto delle immagini  const getImageUrl = (path) => {    if (!path) return '';    // Se e gia un URL completo (Supabase), usalo direttamente    if (path.startsWith('http://') || path.startsWith('https://')) {      return path;    }    // Altrimenti usa l'API URL (dinamico, funziona sia in locale che in produzione)    const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3001';    return apiUrl + path;  };
   // Carica il nome del cantante principale da localStorage all'avvio\n  // MA solo se la coda non � vuota (altrimenti cancella i dati locali)\n  useEffect(() => {\n    const savedMainSinger = localStorage.getItem('mainSingerName');\n    if (savedMainSinger) {\n      // Controlla lo stato della coda prima di ripristinare il nome\n      api.get('/api/queue').then(response => {\n        const currentQueue = response.data.data;\n        if (currentQueue.length === 0) {\n          // Coda vuota = reset completo\n          console.log('??? Coda vuota al caricamento - cancello mainSingerName da localStorage');\n          localStorage.removeItem('mainSingerName');\n          // Non impostiamo mainSingerName e chatSingerName\n        } else {\n          // Coda con elementi = ripristina il nome salvato\n          setMainSingerName(savedMainSinger);\n          setChatSingerName(savedMainSinger);\n        }\n      }).catch(err => {\n        console.error('Errore nel controllo coda iniziale:', err);\n        // In caso di errore, usa comunque il nome salvato\n        setMainSingerName(savedMainSinger);\n        setChatSingerName(savedMainSinger);\n      });\n    }\n  }, []);
 
   // Pre-compila i campi se arrivano dati dalla SongList
@@ -355,7 +356,7 @@ function PublicQueue() {
         <div className="header-content">
           {logoPath && (
             <div className="header-logo">
-              <img src={`http://localhost:3001${logoPath}`} alt="Logo" />
+              <img src={getImageUrl(logoPath)} alt="Logo" />
             </div>
           )}
           <div className="header-text">
@@ -363,7 +364,7 @@ function PublicQueue() {
               {socialLinks.whatsapp && (
                 <a href={`https://wa.me/${socialLinks.whatsapp}`} target="_blank" rel="noopener noreferrer" className="social-icon" title="WhatsApp">
                   {socialIcons.whatsapp ? (
-                    <img src={`http://localhost:3001${socialIcons.whatsapp}`} alt="WhatsApp" className="social-icon-img" />
+                    <img src={getImageUrl(socialIcons.whatsapp)} alt="WhatsApp" className="social-icon-img" />
                   ) : (
                     '📱'
                   )}
@@ -372,7 +373,7 @@ function PublicQueue() {
               {socialLinks.facebook && (
                 <a href={socialLinks.facebook} target="_blank" rel="noopener noreferrer" className="social-icon" title="Facebook">
                   {socialIcons.facebook ? (
-                    <img src={`http://localhost:3001${socialIcons.facebook}`} alt="Facebook" className="social-icon-img" />
+                    <img src={getImageUrl(socialIcons.facebook)} alt="Facebook" className="social-icon-img" />
                   ) : (
                     '📘'
                   )}
@@ -381,7 +382,7 @@ function PublicQueue() {
               {socialLinks.instagram && (
                 <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="social-icon" title="Instagram">
                   {socialIcons.instagram ? (
-                    <img src={`http://localhost:3001${socialIcons.instagram}`} alt="Instagram" className="social-icon-img" />
+                    <img src={getImageUrl(socialIcons.instagram)} alt="Instagram" className="social-icon-img" />
                   ) : (
                     '📷'
                   )}
@@ -390,7 +391,7 @@ function PublicQueue() {
               {socialLinks.phone && (
                 <a href={`tel:${socialLinks.phone}`} className="social-icon" title="Telefono">
                   {socialIcons.phone ? (
-                    <img src={`http://localhost:3001${socialIcons.phone}`} alt="Telefono" className="social-icon-img" />
+                    <img src={getImageUrl(socialIcons.phone)} alt="Telefono" className="social-icon-img" />
                   ) : (
                     '☎️'
                   )}
