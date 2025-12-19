@@ -2044,26 +2044,29 @@
   margin: 0;
 }
 
-/* Responsive */
+/* Responsive - Icone allineate in alto al logo */
 @media (max-width: 768px) {
   .visual-header-content {
-    flex-direction: column;
-    gap: 15px;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
   }
 
   .header-logo-admin {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
   }
 
   .social-icons-left,
   .social-icons-right {
+    flex-direction: column;
     gap: 10px;
   }
 
   .social-icon-img {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
   }
 
   .venue-name-admin {
