@@ -461,7 +461,7 @@ function PublicQueue() {
         <div className="scrolling-text-container">
           <div
             className="scrolling-text"
-            style={{ animationDuration: `${scrollingSpeed}s` }}
+            style={{ '--scroll-duration': `${scrollingSpeed}s` }}
           >
             <div className="scrolling-text-content">
               {scrollingText}
