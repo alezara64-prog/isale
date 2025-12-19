@@ -462,7 +462,6 @@ function PublicQueue() {
           >
             <span>{scrollingText}</span>
             <span>{scrollingText}</span>
-            <span>{scrollingText}</span>
           </div>
         </div>
       )}
