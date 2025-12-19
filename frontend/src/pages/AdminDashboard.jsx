@@ -10,6 +10,7 @@ function AdminDashboard() {
   const [eventDate, setEventDate] = useState('');
   const [venueName, setVenueName] = useState('');
   const [logoPath, setLogoPath] = useState('');
+  const [socialIcons, setSocialIcons] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [singerName, setSingerName] = useState('');
@@ -163,6 +164,7 @@ function AdminDashboard() {
       setFacebookLink(social.facebook || '');
       setInstagramLink(social.instagram || '');
       setPhoneLink(social.phone || '');
+      setSocialIcons(response.data.socialIcons || {});
       setScrollingText(response.data.scrollingText || '');
       setScrollingSpeed(response.data.scrollingSpeed || 20);
       setError(null);
@@ -561,6 +563,68 @@ function AdminDashboard() {
 
       {/* Overlay */}
       {showSidebar && <div className="sidebar-overlay" onClick={() => setShowSidebar(false)}></div>}
+
+      {/* Header visuale con logo e icone social */}
+      <div className="visual-header">
+        <div className="visual-header-content">
+          {/* Icone social a sinistra */}
+          <div className="social-icons-left">
+            {whatsappLink && (
+              <a href={`https://wa.me/${whatsappLink}`} target="_blank" rel="noopener noreferrer" className="social-icon" title="WhatsApp">
+                {socialIcons.whatsapp ? (
+                  <img src={getImageUrl(socialIcons.whatsapp)} alt="WhatsApp" className="social-icon-img" />
+                ) : (
+                  '📱'
+                )}
+              </a>
+            )}
+            {facebookLink && (
+              <a href={facebookLink} target="_blank" rel="noopener noreferrer" className="social-icon" title="Facebook">
+                {socialIcons.facebook ? (
+                  <img src={getImageUrl(socialIcons.facebook)} alt="Facebook" className="social-icon-img" />
+                ) : (
+                  '📘'
+                )}
+              </a>
+            )}
+          </div>
+
+          {/* Logo al centro */}
+          {logoPath && (
+            <div className="header-logo-admin">
+              <img src={getImageUrl(logoPath)} alt="Logo" />
+            </div>
+          )}
+
+          {/* Icone social a destra */}
+          <div className="social-icons-right">
+            {instagramLink && (
+              <a href={instagramLink} target="_blank" rel="noopener noreferrer" className="social-icon" title="Instagram">
+                {socialIcons.instagram ? (
+                  <img src={getImageUrl(socialIcons.instagram)} alt="Instagram" className="social-icon-img" />
+                ) : (
+                  '📷'
+                )}
+              </a>
+            )}
+            {phoneLink && (
+              <a href={`tel:${phoneLink}`} className="social-icon" title="Telefono">
+                {socialIcons.phone ? (
+                  <img src={getImageUrl(socialIcons.phone)} alt="Telefono" className="social-icon-img" />
+                ) : (
+                  '☎️'
+                )}
+              </a>
+            )}
+          </div>
+        </div>
+
+        {/* Testo sotto: nome locale e data */}
+        <div className="visual-header-text">
+          <h2 className="venue-name-admin">{venueName || 'Locale non specificato'}</h2>
+          <p className="event-date-admin">{eventDate || 'Data non impostata'}</p>
+        </div>
+      </div>
 
       <header className="admin-header">
         <div className="header-left">

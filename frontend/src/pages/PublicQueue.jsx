@@ -390,57 +390,66 @@ function PublicQueue() {
     <div className="public-queue-container">
       <header className="header">
         <div className="header-content">
+          {/* Icone social a sinistra */}
+          <div className="social-icons-left">
+            {socialLinks.whatsapp && (
+              <a href={`https://wa.me/${socialLinks.whatsapp}`} target="_blank" rel="noopener noreferrer" className="social-icon" title="WhatsApp">
+                {socialIcons.whatsapp ? (
+                  <img src={getImageUrl(socialIcons.whatsapp)} alt="WhatsApp" className="social-icon-img" />
+                ) : (
+                  '📱'
+                )}
+              </a>
+            )}
+            {socialLinks.facebook && (
+              <a href={socialLinks.facebook} target="_blank" rel="noopener noreferrer" className="social-icon" title="Facebook">
+                {socialIcons.facebook ? (
+                  <img src={getImageUrl(socialIcons.facebook)} alt="Facebook" className="social-icon-img" />
+                ) : (
+                  '📘'
+                )}
+              </a>
+            )}
+          </div>
+
+          {/* Logo al centro */}
           {logoPath && (
             <div className="header-logo">
               <img src={getImageUrl(logoPath)} alt="Logo" />
             </div>
           )}
-          <div className="header-text">
-            <div className="social-icons">
-              {socialLinks.whatsapp && (
-                <a href={`https://wa.me/${socialLinks.whatsapp}`} target="_blank" rel="noopener noreferrer" className="social-icon" title="WhatsApp">
-                  {socialIcons.whatsapp ? (
-                    <img src={getImageUrl(socialIcons.whatsapp)} alt="WhatsApp" className="social-icon-img" />
-                  ) : (
-                    '📱'
-                  )}
-                </a>
-              )}
-              {socialLinks.facebook && (
-                <a href={socialLinks.facebook} target="_blank" rel="noopener noreferrer" className="social-icon" title="Facebook">
-                  {socialIcons.facebook ? (
-                    <img src={getImageUrl(socialIcons.facebook)} alt="Facebook" className="social-icon-img" />
-                  ) : (
-                    '📘'
-                  )}
-                </a>
-              )}
-              {socialLinks.instagram && (
-                <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="social-icon" title="Instagram">
-                  {socialIcons.instagram ? (
-                    <img src={getImageUrl(socialIcons.instagram)} alt="Instagram" className="social-icon-img" />
-                  ) : (
-                    '📷'
-                  )}
-                </a>
-              )}
-              {socialLinks.phone && (
-                <a href={`tel:${socialLinks.phone}`} className="social-icon" title="Telefono">
-                  {socialIcons.phone ? (
-                    <img src={getImageUrl(socialIcons.phone)} alt="Telefono" className="social-icon-img" />
-                  ) : (
-                    '☎️'
-                  )}
-                </a>
-              )}
-            </div>
-            <h1>
-              <a href="/admin/dashboard" className="admin-icon-link" title="Area Admin">🎤</a>
-              {' '}Serata Karaoke
-            </h1>
-            <h1 className="venue-name">{venueName || 'Locale non specificato'}</h1>
-            <p className="event-date">{eventDate ? formatDate(eventDate) : 'Data non impostata'}</p>
+
+          {/* Icone social a destra */}
+          <div className="social-icons-right">
+            {socialLinks.instagram && (
+              <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="social-icon" title="Instagram">
+                {socialIcons.instagram ? (
+                  <img src={getImageUrl(socialIcons.instagram)} alt="Instagram" className="social-icon-img" />
+                ) : (
+                  '📷'
+                )}
+              </a>
+            )}
+            {socialLinks.phone && (
+              <a href={`tel:${socialLinks.phone}`} className="social-icon" title="Telefono">
+                {socialIcons.phone ? (
+                  <img src={getImageUrl(socialIcons.phone)} alt="Telefono" className="social-icon-img" />
+                ) : (
+                  '☎️'
+                )}
+              </a>
+            )}
           </div>
+        </div>
+
+        {/* Testo sotto: titolo, nome locale, data */}
+        <div className="header-text">
+          <h1>
+            <a href="/admin/dashboard" className="admin-icon-link" title="Area Admin">🎤</a>
+            {' '}Serata Karaoke
+          </h1>
+          <h1 className="venue-name">{venueName || 'Locale non specificato'}</h1>
+          <p className="event-date">{eventDate ? formatDate(eventDate) : 'Data non impostata'}</p>
         </div>
       </header>
 

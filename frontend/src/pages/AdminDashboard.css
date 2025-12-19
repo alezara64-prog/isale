@@ -1962,5 +1962,115 @@
   position: relative;
 }
 
+/* Visual Header con Logo e Icone Social */
+.visual-header {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: linear-gradient(135deg, rgba(45, 45, 45, 0.5) 0%, rgba(26, 26, 26, 0.5) 100%);
+  border-radius: 15px;
+  border: 2px solid #ffd700;
+  box-shadow: 0 4px 20px rgba(255, 215, 0, 0.2);
+}
 
+.visual-header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
 
+.header-logo-admin {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #ffd700;
+}
+
+.header-logo-admin img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.3));
+}
+
+.social-icons-left,
+.social-icons-right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.social-icon {
+  font-size: 2rem;
+  text-decoration: none;
+  transition: all 0.3s;
+  cursor: pointer;
+  filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.3));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon:hover {
+  transform: scale(1.3) rotate(10deg);
+  filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.8));
+}
+
+.social-icon-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.visual-header-text {
+  text-align: center;
+}
+
+.venue-name-admin {
+  font-size: 1.8rem;
+  color: #ffd700;
+  margin: 10px 0 5px 0;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.event-date-admin {
+  font-size: 1.1rem;
+  color: #ffed4e;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .visual-header-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .header-logo-admin {
+    width: 80px;
+    height: 80px;
+  }
+
+  .social-icons-left,
+  .social-icons-right {
+    gap: 10px;
+  }
+
+  .social-icon-img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .venue-name-admin {
+    font-size: 1.5rem;
+  }
+
+  .event-date-admin {
+    font-size: 1rem;
+  }
+}

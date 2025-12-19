@@ -19,8 +19,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .header-logo {
@@ -54,14 +55,15 @@
   }
 
   .header-text {
-    margin-right: 0 !important;
     width: 100%;
     align-items: center;
   }
 
-  .social-icons {
+  .social-icons,
+  .social-icons-left,
+  .social-icons-right {
     justify-content: center;
-    gap: 25px;
+    gap: 15px;
   }
 
   .social-icon-img {
@@ -82,11 +84,18 @@
 
 .header-text {
   text-align: center;
-  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 150px;
+  width: 100%;
+}
+
+/* Icone social a sinistra e a destra del logo */
+.social-icons-left,
+.social-icons-right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }
 
 .social-icons {
