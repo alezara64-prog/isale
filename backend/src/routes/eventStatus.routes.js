@@ -4,9 +4,9 @@ const { authenticateAdmin } = require('../middleware/auth.middleware');
 const eventStatusModel = require('../models/eventStatus.model');
 
 // GET /api/event-status - Ottieni lo stato corrente della serata (pubblico)
-router.get('/', (req, res) => {
+router.get('/', async (req, res) => {
   try {
-    const status = eventStatusModel.getEventStatus();
+    const status = await eventStatusModel.getEventStatus();
     res.json({
       success: true,
       data: status
@@ -20,9 +20,9 @@ router.get('/', (req, res) => {
 });
 
 // POST /api/event-status/toggle - Toggle stato serata (solo admin)
-router.post('/toggle', authenticateAdmin, (req, res) => {
+router.post('/toggle', authenticateAdmin, async (req, res) => {
   try {
-    const newStatus = eventStatusModel.toggleEventStatus();
+    const newStatus = await eventStatusModel.toggleEventStatus();
     res.json({
       success: true,
       data: newStatus,
@@ -37,9 +37,9 @@ router.post('/toggle', authenticateAdmin, (req, res) => {
 });
 
 // POST /api/event-status/open - Apri la serata (solo admin)
-router.post('/open', authenticateAdmin, (req, res) => {
+router.post('/open', authenticateAdmin, async (req, res) => {
   try {
-    const newStatus = eventStatusModel.openEvent();
+    const newStatus = await eventStatusModel.openEvent();
     res.json({
       success: true,
       data: newStatus,
@@ -54,9 +54,9 @@ router.post('/open', authenticateAdmin, (req, res) => {
 });
 
 // POST /api/event-status/close - Chiudi la serata (solo admin)
-router.post('/close', authenticateAdmin, (req, res) => {
+router.post('/close', authenticateAdmin, async (req, res) => {
   try {
-    const newStatus = eventStatusModel.closeEvent();
+    const newStatus = await eventStatusModel.closeEvent();
     res.json({
       success: true,
       data: newStatus,

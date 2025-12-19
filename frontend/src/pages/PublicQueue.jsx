@@ -139,16 +139,19 @@ function PublicQueue() {
       const response = await api.get('/api/queue');
       const newQueue = response.data.data;
 
-      // Se la coda viene svuotata completamente, cancella i dati locali e resetta tutto
-      if (newQueue.length === 0 && queue.length > 0) {
-        console.log('🗑️ Coda svuotata - resetto tutto alla schermata iniziale');
-        localStorage.removeItem('mainSingerName');
-        setMainSingerName('');
-        setChatSingerName('');
-        setShowSingerChoice(false);
-        setShowForm(false);
-        setOtherSingerName('');
-      }
+      // RIMOSSO: Reset automatico quando coda vuota
+      // Causava problemi quando il server Vercel si riavviava (cold start)
+      // e perdeva lo stato in memoria. Ora manteniamo i dati locali.
+
+      // if (newQueue.length === 0 && queue.length > 0) {
+      //   console.log('🗑️ Coda svuotata - resetto tutto alla schermata iniziale');
+      //   localStorage.removeItem('mainSingerName');
+      //   setMainSingerName('');
+      //   setChatSingerName('');
+      //   setShowSingerChoice(false);
+      //   setShowForm(false);
+      //   setOtherSingerName('');
+      // }
 
       setQueue(newQueue);
       setEventDate(response.data.eventDate || '');
