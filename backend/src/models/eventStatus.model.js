@@ -1,18 +1,9 @@
 const supabase = require('../config/supabase');
 
-// Cache in memoria per performance (evita query continue)
-let cachedStatus = {
-  isOpen: false,
-  openedAt: null,
-  closedAt: null,
-  lastFetch: null
-};
-
-const CACHE_TTL = 3000; // 3 secondi di cache
-
-// Carica stato da Supabase
+// Carica stato da Supabase (SEMPRE - no cache per compatibilità serverless Vercel)
 async function loadStatusFromDB() {
   try {
+    console.log('📊 [EventStatus] Caricamento stato da Supabase...');
     const { data, error } = await supabase
       .from('event_status')
       .select('*')
@@ -20,12 +11,13 @@ async function loadStatusFromDB() {
       .single();
 
     if (error && error.code !== 'PGRST116') { // PGRST116 = not found
-      console.error('❌ Errore caricamento stato serata:', error);
+      console.error('❌ [EventStatus] Errore caricamento stato serata:', error);
       return null;
     }
 
     if (!data) {
       // Se non esiste, crea il record
+      console.log('📝 [EventStatus] Record non trovato, creazione nuovo record...');
       const { data: newData, error: insertError } = await supabase
         .from('event_status')
         .insert([{ key: 'eventIsOpen', value: false }])
@@ -33,98 +25,91 @@ async function loadStatusFromDB() {
         .single();
 
       if (insertError) {
-        console.error('❌ Errore creazione stato serata:', insertError);
+        console.error('❌ [EventStatus] Errore creazione stato serata:', insertError);
         return { isOpen: false, openedAt: null, closedAt: null };
       }
 
+      console.log('✅ [EventStatus] Record creato: isOpen=false');
       return { isOpen: false, openedAt: null, closedAt: null };
     }
 
-    return {
+    const status = {
       isOpen: data.value,
       openedAt: data.value ? data.updated_at : null,
       closedAt: data.value ? null : data.updated_at
     };
+    console.log(`✅ [EventStatus] Stato caricato: isOpen=${status.isOpen}`);
+    return status;
   } catch (err) {
-    console.error('❌ Errore nel caricamento stato:', err);
-    return cachedStatus;
+    console.error('❌ [EventStatus] Errore nel caricamento stato:', err);
+    return { isOpen: false, openedAt: null, closedAt: null };
   }
 }
 
 // Salva stato su Supabase
 async function saveStatusToDB(isOpen) {
   try {
+    console.log(`💾 [EventStatus] Salvataggio stato su Supabase: isOpen=${isOpen}`);
     const { error } = await supabase
       .from('event_status')
       .update({ value: isOpen, updated_at: new Date().toISOString() })
       .eq('key', 'eventIsOpen');
 
     if (error) {
-      console.error('❌ Errore salvataggio stato serata:', error);
+      console.error('❌ [EventStatus] Errore salvataggio stato serata:', error);
       return false;
     }
 
+    console.log(`✅ [EventStatus] Stato salvato con successo: isOpen=${isOpen}`);
     return true;
   } catch (err) {
-    console.error('❌ Errore nel salvataggio stato:', err);
+    console.error('❌ [EventStatus] Errore nel salvataggio stato:', err);
     return false;
   }
 }
 
-// Ottieni lo stato corrente della serata
+// Ottieni lo stato corrente della serata (sempre da DB, no cache)
 async function getEventStatus() {
-  const now = Date.now();
-
-  // Usa cache se recente
-  if (cachedStatus.lastFetch && (now - cachedStatus.lastFetch) < CACHE_TTL) {
-    return { ...cachedStatus };
-  }
-
-  // Altrimenti carica da DB
+  console.log('🔍 [EventStatus] Richiesta stato corrente...');
   const status = await loadStatusFromDB();
-  if (status) {
-    cachedStatus = { ...status, lastFetch: now };
-  }
-
-  return { ...cachedStatus };
+  return status || { isOpen: false, openedAt: null, closedAt: null };
 }
 
 // Apri la serata
 async function openEvent() {
+  console.log('🎉 [EventStatus] Apertura serata...');
   const success = await saveStatusToDB(true);
 
   if (success) {
-    cachedStatus.isOpen = true;
-    cachedStatus.openedAt = new Date().toISOString();
-    cachedStatus.closedAt = null;
-    cachedStatus.lastFetch = Date.now();
-    console.log('🎉 Serata aperta e salvata su Supabase!');
+    console.log('✅ [EventStatus] Serata aperta e salvata su Supabase!');
   } else {
-    console.error('⚠️ Serata aperta in cache ma non salvata su DB');
+    console.error('⚠️ [EventStatus] Errore durante apertura serata');
   }
 
-  return { ...cachedStatus };
+  // Ricarica lo stato aggiornato da DB
+  return await getEventStatus();
 }
 
 // Chiudi la serata
 async function closeEvent() {
+  console.log('🔒 [EventStatus] Chiusura serata...');
   const success = await saveStatusToDB(false);
 
   if (success) {
-    cachedStatus.isOpen = false;
-    cachedStatus.closedAt = new Date().toISOString();
-    cachedStatus.lastFetch = Date.now();
-    console.log('🔒 Serata chiusa e salvata su Supabase!');
+    console.log('✅ [EventStatus] Serata chiusa e salvata su Supabase!');
   } else {
-    console.error('⚠️ Serata chiusa in cache ma non salvata su DB');
+    console.error('⚠️ [EventStatus] Errore durante chiusura serata');
   }
 
-  return { ...cachedStatus };
+  // Ricarica lo stato aggiornato da DB
+  return await getEventStatus();
 }
 
 // Toggle stato serata
 async function toggleEventStatus() {
+  console.log('🔄 [EventStatus] Toggle stato serata...');
   const currentStatus = await getEventStatus();
+  console.log(`📊 [EventStatus] Stato attuale prima del toggle: isOpen=${currentStatus.isOpen}`);
 
   if (currentStatus.isOpen) {
     return await closeEvent();
@@ -132,14 +117,6 @@ async function toggleEventStatus() {
     return await openEvent();
   }
 }
-
-// Inizializza caricando lo stato all'avvio
-loadStatusFromDB().then(status => {
-  if (status) {
-    cachedStatus = { ...status, lastFetch: Date.now() };
-    console.log(`📊 Stato serata iniziale: ${status.isOpen ? '🟢 Aperta' : '🔴 Chiusa'}`);
-  }
-});
 
 module.exports = {
   getEventStatus,
