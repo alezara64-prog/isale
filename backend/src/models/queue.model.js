@@ -1,11 +1,7 @@
 // Modello dati per la coda karaoke
-// Usa persistenza su file JSON
+// Usa persistenza su Supabase
 
-const fs = require('fs');
-const path = require('path');
-
-// Path del file di persistenza
-const DATA_FILE = path.join(__dirname, '../../data/settings.json');
+const supabase = require('../config/supabase');
 
 // Funzione per ottenere la data odierna in formato YYYY-MM-DD (fuso orario locale)
 function getTodayDate() {
@@ -34,52 +30,98 @@ let socialIcons = {
 let scrollingText = ''; // Testo scorrevole per la pagina pubblica
 let scrollingSpeed = 20; // Velocità di scorrimento in secondi (default: 20s)
 
-// Funzione per salvare i dati su file
-function saveData() {
-  try {
-    const data = {
-      eventDate,
-      venueName,
-      logoPath,
-      socialLinks,
-      socialIcons,
-      scrollingText,
-      scrollingSpeed,
-      lastUpdated: new Date().toISOString()
-    };
+// Cache per evitare troppe query
+let settingsCache = {
+  lastFetch: null,
+  data: null
+};
+const CACHE_TTL = 5000; // 5 secondi di cache
 
-    // Crea la directory data se non esiste
-    const dataDir = path.dirname(DATA_FILE);
-    if (!fs.existsSync(dataDir)) {
-      fs.mkdirSync(dataDir, { recursive: true });
+// Salva un singolo setting su Supabase
+async function saveSetting(key, value) {
+  try {
+    const { error } = await supabase
+      .from('settings')
+      .upsert({ key, value: JSON.stringify(value) }, { onConflict: 'key' });
+
+    if (error) {
+      console.error(`❌ Errore salvataggio ${key}:`, error);
+      return false;
+    }
+    return true;
+  } catch (err) {
+    console.error(`❌ Errore nel salvataggio di ${key}:`, err);
+    return false;
+  }
+}
+
+// Carica tutti i settings da Supabase
+async function loadSettings() {
+  try {
+    const { data, error } = await supabase
+      .from('settings')
+      .select('*');
+
+    if (error) {
+      console.error('❌ Errore caricamento settings:', error);
+      return null;
     }
 
-    fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 2), 'utf8');
-    console.log('✅ Dati salvati su file');
+    const settings = {};
+    data.forEach(row => {
+      try {
+        settings[row.key] = JSON.parse(row.value);
+      } catch (e) {
+        settings[row.key] = row.value;
+      }
+    });
+
+    return settings;
+  } catch (err) {
+    console.error('❌ Errore nel caricamento settings:', err);
+    return null;
+  }
+}
+
+// Funzione per salvare i dati su Supabase
+async function saveData() {
+  try {
+    await Promise.all([
+      saveSetting('eventDate', eventDate),
+      saveSetting('venueName', venueName),
+      saveSetting('logoPath', logoPath),
+      saveSetting('socialLinks', socialLinks),
+      saveSetting('socialIcons', socialIcons),
+      saveSetting('scrollingText', scrollingText),
+      saveSetting('scrollingSpeed', scrollingSpeed)
+    ]);
+
+    // Invalida cache
+    settingsCache.lastFetch = null;
+    console.log('✅ Settings salvati su Supabase');
   } catch (error) {
     console.error('❌ Errore nel salvataggio dei dati:', error);
   }
 }
 
-// Funzione per caricare i dati dal file
-function loadData() {
+// Funzione per caricare i dati da Supabase
+async function loadData() {
   try {
-    if (fs.existsSync(DATA_FILE)) {
-      const fileContent = fs.readFileSync(DATA_FILE, 'utf8');
-      const data = JSON.parse(fileContent);
+    const settings = await loadSettings();
 
+    if (settings) {
       // La data evento viene sempre impostata alla data odierna all'avvio
       eventDate = getTodayDate();
-      venueName = data.venueName || '';
-      logoPath = data.logoPath || '';
-      socialLinks = data.socialLinks || socialLinks;
-      socialIcons = data.socialIcons || socialIcons;
-      scrollingText = data.scrollingText || '';
-      scrollingSpeed = data.scrollingSpeed || 20;
+      venueName = settings.venueName || '';
+      logoPath = settings.logoPath || '';
+      socialLinks = settings.socialLinks || socialLinks;
+      socialIcons = settings.socialIcons || socialIcons;
+      scrollingText = settings.scrollingText || '';
+      scrollingSpeed = settings.scrollingSpeed || 20;
 
-      console.log('✅ Dati caricati da file');
+      console.log('✅ Settings caricati da Supabase');
     } else {
-      console.log('ℹ️ Nessun file di dati trovato, uso valori di default');
+      console.log('ℹ️ Nessun setting trovato, uso valori di default');
     }
   } catch (error) {
     console.error('❌ Errore nel caricamento dei dati:', error);
