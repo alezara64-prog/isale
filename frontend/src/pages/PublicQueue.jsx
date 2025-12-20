@@ -159,8 +159,14 @@ function PublicQueue() {
       setLogoPath(response.data.logoPath || '');
       setSocialLinks(response.data.socialLinks || {});
       setSocialIcons(response.data.socialIcons || {});
-      setScrollingText(response.data.scrollingText || '');
-      setScrollingSpeed(response.data.scrollingSpeed || 20);
+
+      // Aggiorna scrollingText solo se è cambiato (per evitare reset dell'animazione)
+      const newScrollingText = response.data.scrollingText || '';
+      setScrollingText(prev => prev === newScrollingText ? prev : newScrollingText);
+
+      // Aggiorna scrollingSpeed solo se è cambiato (per evitare reset dell'animazione)
+      const newScrollingSpeed = response.data.scrollingSpeed || 20;
+      setScrollingSpeed(prev => prev === newScrollingSpeed ? prev : newScrollingSpeed);
     } catch (err) {
       setError('Errore nel caricamento della coda');
       console.error(err);

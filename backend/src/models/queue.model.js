@@ -131,6 +131,19 @@ async function loadData() {
 // Carica i dati all'avvio
 loadData();
 
+// Funzione helper per assicurarsi che i settings siano caricati
+async function ensureSettingsLoaded() {
+  // Se i settings sono vuoti e non sono stati caricati di recente, ricarica
+  const now = Date.now();
+  const shouldReload = !settingsCache.lastFetch || (now - settingsCache.lastFetch) > CACHE_TTL;
+
+  if (shouldReload && (!venueName && !logoPath && !scrollingText)) {
+    console.log('⚠️ Settings vuoti, ricarico da Supabase...');
+    await loadData();
+    settingsCache.lastFetch = now;
+  }
+}
+
 class QueueModel {
   // Ottieni tutta la coda
   static getAll() {
@@ -362,6 +375,11 @@ class QueueModel {
     scrollingSpeed = parseInt(speed) || 20;
     saveData();
     return scrollingSpeed;
+  }
+
+  // Assicura che i settings siano caricati (per uso nei controller)
+  static async ensureSettingsLoaded() {
+    await ensureSettingsLoaded();
   }
 }
 

@@ -2,8 +2,11 @@ const QueueModel = require('../models/queue.model');
 
 class QueueController {
   // GET /api/queue - Ottieni la coda (pubblico)
-  static getQueue(req, res) {
+  static async getQueue(req, res) {
     try {
+      // Assicura che i settings siano caricati (ricarica da Supabase se vuoti)
+      await QueueModel.ensureSettingsLoaded();
+
       const queue = QueueModel.getAll();
       const eventDate = QueueModel.getEventDate();
       const venueName = QueueModel.getVenueName();
